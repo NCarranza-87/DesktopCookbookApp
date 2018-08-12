@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="TeamDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="category">
+          <Key>
+            <PropertyRef Name="categoryId" />
+          </Key>
+          <Property Name="categoryId" Type="int" Nullable="false" />
+          <Property Name="categoryName" Type="varchar" MaxLength="40" Nullable="false" />
+        </EntityType>
+        <EntityType Name="recipe">
+          <Key>
+            <PropertyRef Name="recipeId" />
+          </Key>
+          <Property Name="recipeId" Type="int" Nullable="false" />
+          <Property Name="recipeTitle" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="recipeDescrip" Type="varchar" MaxLength="1000" Nullable="false" />
+          <Property Name="recipeNeed" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="recipeYield" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="recipePrepTime" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="recipeCookTime" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="recipeTemp" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="recipeIngred" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="recipeSteps" Type="varchar" MaxLength="4000" Nullable="false" />
+          <Property Name="recipeTips" Type="varchar" MaxLength="2000" Nullable="false" />
+        </EntityType>
+        <EntityType Name="recipecategory">
+          <Key>
+            <PropertyRef Name="recipeCategoryId" />
+          </Key>
+          <Property Name="recipeCategoryId" Type="int" Nullable="false" />
+          <Property Name="categoryId" Type="int" Nullable="false" />
+          <Property Name="recipeId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="TeamDBModelStoreContainer">
+          <EntitySet Name="category" EntityType="Self.category" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="recipe" EntityType="Self.recipe" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="recipecategory" EntityType="Self.recipecategory" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TeamDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="category">
+          <Key>
+            <PropertyRef Name="categoryId" />
+          </Key>
+          <Property Name="categoryId" Type="Int32" Nullable="false" />
+          <Property Name="categoryName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="recipe">
+          <Key>
+            <PropertyRef Name="recipeId" />
+          </Key>
+          <Property Name="recipeId" Type="Int32" Nullable="false" />
+          <Property Name="recipeTitle" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="recipeDescrip" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="recipeNeed" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="recipeYield" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="recipePrepTime" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="recipeCookTime" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="recipeTemp" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="recipeIngred" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="recipeSteps" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="recipeTips" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="recipecategory">
+          <Key>
+            <PropertyRef Name="recipeCategoryId" />
+          </Key>
+          <Property Name="recipeCategoryId" Type="Int32" Nullable="false" />
+          <Property Name="categoryId" Type="Int32" Nullable="false" />
+          <Property Name="recipeId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="RecipeContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="category" EntityType="Self.category" />
+          <EntitySet Name="recipe" EntityType="Self.recipe" />
+          <EntitySet Name="recipecategory" EntityType="Self.recipecategory" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TeamDBModelStoreContainer" CdmEntityContainer="RecipeContext">
+          <EntitySetMapping Name="category">
+            <EntityTypeMapping TypeName="TeamDBModel.category">
+              <MappingFragment StoreEntitySet="category">
+                <ScalarProperty Name="categoryId" ColumnName="categoryId" />
+                <ScalarProperty Name="categoryName" ColumnName="categoryName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="recipe">
+            <EntityTypeMapping TypeName="TeamDBModel.recipe">
+              <MappingFragment StoreEntitySet="recipe">
+                <ScalarProperty Name="recipeId" ColumnName="recipeId" />
+                <ScalarProperty Name="recipeTitle" ColumnName="recipeTitle" />
+                <ScalarProperty Name="recipeDescrip" ColumnName="recipeDescrip" />
+                <ScalarProperty Name="recipeNeed" ColumnName="recipeNeed" />
+                <ScalarProperty Name="recipeYield" ColumnName="recipeYield" />
+                <ScalarProperty Name="recipePrepTime" ColumnName="recipePrepTime" />
+                <ScalarProperty Name="recipeCookTime" ColumnName="recipeCookTime" />
+                <ScalarProperty Name="recipeTemp" ColumnName="recipeTemp" />
+                <ScalarProperty Name="recipeIngred" ColumnName="recipeIngred" />
+                <ScalarProperty Name="recipeSteps" ColumnName="recipeSteps" />
+                <ScalarProperty Name="recipeTips" ColumnName="recipeTips" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="recipecategory">
+            <EntityTypeMapping TypeName="TeamDBModel.recipecategory">
+              <MappingFragment StoreEntitySet="recipecategory">
+                <ScalarProperty Name="recipeCategoryId" ColumnName="recipeCategoryId" />
+                <ScalarProperty Name="categoryId" ColumnName="categoryId" />
+                <ScalarProperty Name="recipeId" ColumnName="recipeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
