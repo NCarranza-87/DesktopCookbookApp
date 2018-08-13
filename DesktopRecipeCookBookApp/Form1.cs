@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace DesktopRecipeCookBookApp
 {
-    public partial class Form1 : Form
+    public partial class frmNewRecipe : Form
     {
-        public Form1()
+        public frmNewRecipe()
         {
             InitializeComponent();
         }
+
+        
     }
 }
