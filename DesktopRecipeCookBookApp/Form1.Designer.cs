@@ -54,6 +54,7 @@
             this.cmb_RecipeList = new System.Windows.Forms.ComboBox();
             this.tbc_Recipe = new System.Windows.Forms.TabControl();
             this.tab_New = new System.Windows.Forms.TabPage();
+            this.btn_Save = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.grb_CategoryChboxes = new System.Windows.Forms.GroupBox();
             this.tab_View = new System.Windows.Forms.TabPage();
@@ -63,7 +64,6 @@
             this.btn_Delete = new System.Windows.Forms.Button();
             this.cmb_DeleteList = new System.Windows.Forms.ComboBox();
             this.comboBoc = new System.Windows.Forms.ComboBox();
-            this.btn_Save = new System.Windows.Forms.Button();
             this.tbc_Recipe.SuspendLayout();
             this.tab_New.SuspendLayout();
             this.grb_CategoryChboxes.SuspendLayout();
@@ -232,7 +232,7 @@
             this.txt_NewName.ForeColor = System.Drawing.Color.Olive;
             this.txt_NewName.Location = new System.Drawing.Point(194, 118);
             this.txt_NewName.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_NewName.MinimumSize = new System.Drawing.Size(0, 28);
+            this.txt_NewName.MinimumSize = new System.Drawing.Size(4, 28);
             this.txt_NewName.Name = "txt_NewName";
             this.txt_NewName.Size = new System.Drawing.Size(352, 28);
             this.txt_NewName.TabIndex = 1;
@@ -410,7 +410,8 @@
             // tab_New
             // 
             this.tab_New.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.tab_New.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tab_New.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tab_New.BackgroundImage")));
+            this.tab_New.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tab_New.Controls.Add(this.btn_Save);
             this.tab_New.Controls.Add(this.label2);
             this.tab_New.Controls.Add(this.lblAddPage);
@@ -444,6 +445,18 @@
             this.tab_New.Text = "NEW RECIPE";
             this.tab_New.ToolTipText = "ADD a new recipe";
             // 
+            // btn_Save
+            // 
+            this.btn_Save.BackColor = System.Drawing.Color.Olive;
+            this.btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Save.Font = new System.Drawing.Font("KG Covered By Your Grace", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Save.Location = new System.Drawing.Point(180, 574);
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(274, 44);
+            this.btn_Save.TabIndex = 32;
+            this.btn_Save.Text = "SAVE RECIPE";
+            this.btn_Save.UseVisualStyleBackColor = false;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -474,7 +487,8 @@
             // tab_View
             // 
             this.tab_View.BackColor = System.Drawing.Color.DarkKhaki;
-            this.tab_View.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tab_View.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tab_View.BackgroundImage")));
+            this.tab_View.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tab_View.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tab_View.Controls.Add(this.cmb_RecipeList);
             this.tab_View.ForeColor = System.Drawing.Color.PeachPuff;
@@ -556,23 +570,11 @@
             this.comboBoc.TabIndex = 33;
             this.comboBoc.Text = "Choose an EXISTING Recipe";
             // 
-            // btn_Save
-            // 
-            this.btn_Save.BackColor = System.Drawing.Color.Olive;
-            this.btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Save.Font = new System.Drawing.Font("KG Covered By Your Grace", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Save.Location = new System.Drawing.Point(180, 574);
-            this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(274, 44);
-            this.btn_Save.TabIndex = 32;
-            this.btn_Save.Text = "SAVE RECIPE";
-            this.btn_Save.UseVisualStyleBackColor = false;
-            // 
             // frmNewRecipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.DarkKhaki;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(947, 851);
             this.Controls.Add(this.tbc_Recipe);
