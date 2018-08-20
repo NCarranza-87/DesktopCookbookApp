@@ -17,6 +17,18 @@ namespace DesktopRecipeCookBookApp
             InitializeComponent();
         }
 
-        
+        private void frmNewRecipe_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mnu_Quit_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Quit and Exit Application?", "Quit", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                Application.Exit();
+
+            }
+        }
     }
 }
