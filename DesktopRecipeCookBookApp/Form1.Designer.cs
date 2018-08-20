@@ -714,13 +714,13 @@
             // 
             this.mnu_ViewByCategory.Name = "mnu_ViewByCategory";
             this.mnu_ViewByCategory.Size = new System.Drawing.Size(180, 22);
-            this.mnu_ViewByCategory.Text = "Category";
+            this.mnu_ViewByCategory.Text = "By Category";
             // 
             // mnu_ViewByName
             // 
             this.mnu_ViewByName.Name = "mnu_ViewByName";
             this.mnu_ViewByName.Size = new System.Drawing.Size(180, 22);
-            this.mnu_ViewByName.Text = "Recipe Name";
+            this.mnu_ViewByName.Text = "By Recipe Name";
             // 
             // mnu_Edit
             // 
