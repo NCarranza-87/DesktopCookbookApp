@@ -122,6 +122,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\newform.jpg" />
+    <Content Include="Images\viewback.jpg" />
     <Content Include="RecipeCookbookModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>RecipeCookbookModel.edmx</DependentUpon>
