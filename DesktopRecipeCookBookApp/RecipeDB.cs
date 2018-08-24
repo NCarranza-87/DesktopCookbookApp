@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace DesktopRecipeCookBookApp
 {
-    class RecipeDB
+    public class RecipeDB
     {
-        public List<recipe> GetAllRecipes()
+        public static List<recipe> GetAllRecipes()
         {
             RecipeContext context = new RecipeContext();
 
