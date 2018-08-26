@@ -74,17 +74,14 @@
             this.editRecipeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteRecipeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitRecipeApplicationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menustrip_Nav = new System.Windows.Forms.MenuStrip();
             this.mnu_Options = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnu_Create = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnu_New = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnu_View = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnu_ViewByCategory = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnu_ViewByName = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnu_Edit = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnu_Delete = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnu_Save = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_Quit = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnu_TabNav = new System.Windows.Forms.ToolStripMenuItem();
+            this.navTab_menuItem_NEW = new System.Windows.Forms.ToolStripMenuItem();
+            this.navTab_menuIItem_VIEW = new System.Windows.Forms.ToolStripMenuItem();
+            this.navTab_menuItem_EDIT = new System.Windows.Forms.ToolStripMenuItem();
+            this.navTab_menuItem_DELETE = new System.Windows.Forms.ToolStripMenuItem();
             this.tbc_Recipe.SuspendLayout();
             this.tab_New.SuspendLayout();
             this.grb_CategoryChboxes.SuspendLayout();
@@ -92,7 +89,7 @@
             this.tab_Edit.SuspendLayout();
             this.tab_Delete.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.menustrip_Nav.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblAddPage
@@ -410,18 +407,18 @@
             this.cmb_RecipeList.FormattingEnabled = true;
             this.cmb_RecipeList.Location = new System.Drawing.Point(123, 52);
             this.cmb_RecipeList.Name = "cmb_RecipeList";
-            this.cmb_RecipeList.Size = new System.Drawing.Size(431, 26);
+            this.cmb_RecipeList.Size = new System.Drawing.Size(431, 28);
             this.cmb_RecipeList.TabIndex = 15;
             this.cmb_RecipeList.Text = "Choose an EXISTING Recipe";
             // 
             // tbc_Recipe
             // 
-            this.tbc_Recipe.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
+            this.tbc_Recipe.Appearance = System.Windows.Forms.TabAppearance.Buttons;
             this.tbc_Recipe.Controls.Add(this.tab_New);
             this.tbc_Recipe.Controls.Add(this.tab_View);
             this.tbc_Recipe.Controls.Add(this.tab_Edit);
             this.tbc_Recipe.Controls.Add(this.tab_Delete);
-            this.tbc_Recipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbc_Recipe.Font = new System.Drawing.Font("KG Covered By Your Grace", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbc_Recipe.ItemSize = new System.Drawing.Size(150, 30);
             this.tbc_Recipe.Location = new System.Drawing.Point(166, 43);
             this.tbc_Recipe.Name = "tbc_Recipe";
@@ -544,7 +541,7 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(119, 52);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(431, 26);
+            this.comboBox2.Size = new System.Drawing.Size(431, 28);
             this.comboBox2.TabIndex = 17;
             this.comboBox2.Text = "Choose an EXISTING Recipe";
             // 
@@ -579,7 +576,7 @@
             this.cmb_DeleteList.FormattingEnabled = true;
             this.cmb_DeleteList.Location = new System.Drawing.Point(109, 52);
             this.cmb_DeleteList.Name = "cmb_DeleteList";
-            this.cmb_DeleteList.Size = new System.Drawing.Size(431, 26);
+            this.cmb_DeleteList.Size = new System.Drawing.Size(431, 28);
             this.cmb_DeleteList.TabIndex = 19;
             this.cmb_DeleteList.Text = "Choose an EXISTING Recipe";
             // 
@@ -657,99 +654,102 @@
             this.exitRecipeApplicationToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.exitRecipeApplicationToolStripMenuItem.Text = "Exit Recipe Application";
             // 
-            // menuStrip1
+            // menustrip_Nav
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnu_Options});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(947, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menustrip_Nav.Font = new System.Drawing.Font("KG Covered By Your Grace", 16F, System.Drawing.FontStyle.Bold);
+            this.menustrip_Nav.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnu_Options,
+            this.mnu_TabNav});
+            this.menustrip_Nav.Location = new System.Drawing.Point(0, 0);
+            this.menustrip_Nav.MdiWindowListItem = this.mnu_Options;
+            this.menustrip_Nav.Name = "menustrip_Nav";
+            this.menustrip_Nav.Size = new System.Drawing.Size(947, 33);
+            this.menustrip_Nav.TabIndex = 13;
+            this.menustrip_Nav.Text = "NAV Options";
             // 
             // mnu_Options
             // 
+            this.mnu_Options.BackColor = System.Drawing.Color.PeachPuff;
+            this.mnu_Options.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.mnu_Options.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnu_Create,
-            this.mnu_View,
-            this.mnu_Edit,
-            this.mnu_Delete,
-            this.mnu_Save,
             this.mnu_Quit});
             this.mnu_Options.ForeColor = System.Drawing.Color.Olive;
             this.mnu_Options.Name = "mnu_Options";
             this.mnu_Options.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)));
-            this.mnu_Options.Size = new System.Drawing.Size(53, 20);
+            this.mnu_Options.Size = new System.Drawing.Size(67, 29);
             this.mnu_Options.Text = "&MENU";
-            // 
-            // mnu_Create
-            // 
-            this.mnu_Create.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnu_New});
-            this.mnu_Create.Name = "mnu_Create";
-            this.mnu_Create.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.mnu_Create.Size = new System.Drawing.Size(195, 22);
-            this.mnu_Create.Text = "&CREATE Recipe";
-            // 
-            // mnu_New
-            // 
-            this.mnu_New.Name = "mnu_New";
-            this.mnu_New.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.mnu_New.Size = new System.Drawing.Size(180, 22);
-            this.mnu_New.Text = "&New Recipe";
-            this.mnu_New.Click += new System.EventHandler(this.frmNewRecipe_Load);
-            this.mnu_New.DisplayStyleChanged += new System.EventHandler(this.frmNewRecipe_Load);
-            // 
-            // mnu_View
-            // 
-            this.mnu_View.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnu_ViewByCategory,
-            this.mnu_ViewByName});
-            this.mnu_View.Name = "mnu_View";
-            this.mnu_View.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.mnu_View.Size = new System.Drawing.Size(195, 22);
-            this.mnu_View.Text = "&VIEW Recipes";
-            // 
-            // mnu_ViewByCategory
-            // 
-            this.mnu_ViewByCategory.Name = "mnu_ViewByCategory";
-            this.mnu_ViewByCategory.Size = new System.Drawing.Size(180, 22);
-            this.mnu_ViewByCategory.Text = "By Category";
-            // 
-            // mnu_ViewByName
-            // 
-            this.mnu_ViewByName.Name = "mnu_ViewByName";
-            this.mnu_ViewByName.Size = new System.Drawing.Size(180, 22);
-            this.mnu_ViewByName.Text = "By Recipe Name";
-            // 
-            // mnu_Edit
-            // 
-            this.mnu_Edit.Name = "mnu_Edit";
-            this.mnu_Edit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this.mnu_Edit.Size = new System.Drawing.Size(195, 22);
-            this.mnu_Edit.Text = "&EDIT Recipe";
-            // 
-            // mnu_Delete
-            // 
-            this.mnu_Delete.Name = "mnu_Delete";
-            this.mnu_Delete.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
-            this.mnu_Delete.Size = new System.Drawing.Size(195, 22);
-            this.mnu_Delete.Text = "&DELETE Recipe";
-            // 
-            // mnu_Save
-            // 
-            this.mnu_Save.Name = "mnu_Save";
-            this.mnu_Save.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.mnu_Save.Size = new System.Drawing.Size(195, 22);
-            this.mnu_Save.Text = "&SAVE Recipe";
             // 
             // mnu_Quit
             // 
+            this.mnu_Quit.BackColor = System.Drawing.Color.Olive;
+            this.mnu_Quit.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F);
+            this.mnu_Quit.ForeColor = System.Drawing.Color.PeachPuff;
             this.mnu_Quit.Name = "mnu_Quit";
             this.mnu_Quit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
-            this.mnu_Quit.Size = new System.Drawing.Size(195, 22);
+            this.mnu_Quit.Size = new System.Drawing.Size(180, 24);
             this.mnu_Quit.Text = "&QUIT ";
+            this.mnu_Quit.ToolTipText = "Exit Application";
             this.mnu_Quit.Click += new System.EventHandler(this.mnu_Quit_Click);
+            // 
+            // mnu_TabNav
+            // 
+            this.mnu_TabNav.BackColor = System.Drawing.Color.Khaki;
+            this.mnu_TabNav.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.navTab_menuItem_NEW,
+            this.navTab_menuIItem_VIEW,
+            this.navTab_menuItem_EDIT,
+            this.navTab_menuItem_DELETE});
+            this.mnu_TabNav.ForeColor = System.Drawing.Color.Olive;
+            this.mnu_TabNav.Name = "mnu_TabNav";
+            this.mnu_TabNav.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
+            this.mnu_TabNav.ShowShortcutKeys = false;
+            this.mnu_TabNav.Size = new System.Drawing.Size(158, 29);
+            this.mnu_TabNav.Text = "&TAB NAVIGATION";
+            this.mnu_TabNav.ToolTipText = "form tab pages from  navigation menu";
+            // 
+            // navTab_menuItem_NEW
+            // 
+            this.navTab_menuItem_NEW.BackColor = System.Drawing.Color.PeachPuff;
+            this.navTab_menuItem_NEW.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.navTab_menuItem_NEW.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F);
+            this.navTab_menuItem_NEW.ForeColor = System.Drawing.Color.Olive;
+            this.navTab_menuItem_NEW.Name = "navTab_menuItem_NEW";
+            this.navTab_menuItem_NEW.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.navTab_menuItem_NEW.Size = new System.Drawing.Size(196, 24);
+            this.navTab_menuItem_NEW.Text = "&NEW Recipe";
+            // 
+            // navTab_menuIItem_VIEW
+            // 
+            this.navTab_menuIItem_VIEW.BackColor = System.Drawing.Color.PeachPuff;
+            this.navTab_menuIItem_VIEW.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.navTab_menuIItem_VIEW.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F);
+            this.navTab_menuIItem_VIEW.ForeColor = System.Drawing.Color.Olive;
+            this.navTab_menuIItem_VIEW.Name = "navTab_menuIItem_VIEW";
+            this.navTab_menuIItem_VIEW.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
+            this.navTab_menuIItem_VIEW.Size = new System.Drawing.Size(196, 24);
+            this.navTab_menuIItem_VIEW.Text = "&VIEW Recipes";
+            // 
+            // navTab_menuItem_EDIT
+            // 
+            this.navTab_menuItem_EDIT.BackColor = System.Drawing.Color.PeachPuff;
+            this.navTab_menuItem_EDIT.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.navTab_menuItem_EDIT.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F);
+            this.navTab_menuItem_EDIT.ForeColor = System.Drawing.Color.Olive;
+            this.navTab_menuItem_EDIT.Name = "navTab_menuItem_EDIT";
+            this.navTab_menuItem_EDIT.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
+            this.navTab_menuItem_EDIT.Size = new System.Drawing.Size(196, 24);
+            this.navTab_menuItem_EDIT.Text = "&EDIT Recipe";
+            // 
+            // navTab_menuItem_DELETE
+            // 
+            this.navTab_menuItem_DELETE.BackColor = System.Drawing.Color.PeachPuff;
+            this.navTab_menuItem_DELETE.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.navTab_menuItem_DELETE.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F);
+            this.navTab_menuItem_DELETE.ForeColor = System.Drawing.Color.Olive;
+            this.navTab_menuItem_DELETE.Name = "navTab_menuItem_DELETE";
+            this.navTab_menuItem_DELETE.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
+            this.navTab_menuItem_DELETE.Size = new System.Drawing.Size(196, 24);
+            this.navTab_menuItem_DELETE.Text = "&DELETE Recipe";
             // 
             // frmNewRecipe
             // 
@@ -759,11 +759,11 @@
             this.BackColor = System.Drawing.Color.DarkKhaki;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(947, 851);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.menustrip_Nav);
             this.Controls.Add(this.tbc_Recipe);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Sienna;
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.menustrip_Nav;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmNewRecipe";
             this.Text = "NewRecipeForm";
@@ -776,8 +776,8 @@
             this.tab_Edit.ResumeLayout(false);
             this.tab_Delete.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menustrip_Nav.ResumeLayout(false);
+            this.menustrip_Nav.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -829,17 +829,14 @@
         private System.Windows.Forms.ToolStripMenuItem editRecipeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteRecipeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitRecipeApplicationToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menustrip_Nav;
         private System.Windows.Forms.ToolStripMenuItem mnu_Options;
-        private System.Windows.Forms.ToolStripMenuItem mnu_View;
-        private System.Windows.Forms.ToolStripMenuItem mnu_ViewByCategory;
-        private System.Windows.Forms.ToolStripMenuItem mnu_ViewByName;
-        private System.Windows.Forms.ToolStripMenuItem mnu_Create;
-        private System.Windows.Forms.ToolStripMenuItem mnu_New;
-        private System.Windows.Forms.ToolStripMenuItem mnu_Save;
-        private System.Windows.Forms.ToolStripMenuItem mnu_Delete;
-        private System.Windows.Forms.ToolStripMenuItem mnu_Edit;
         private System.Windows.Forms.ToolStripMenuItem mnu_Quit;
+        private System.Windows.Forms.ToolStripMenuItem mnu_TabNav;
+        private System.Windows.Forms.ToolStripMenuItem navTab_menuItem_NEW;
+        private System.Windows.Forms.ToolStripMenuItem navTab_menuIItem_VIEW;
+        private System.Windows.Forms.ToolStripMenuItem navTab_menuItem_EDIT;
+        private System.Windows.Forms.ToolStripMenuItem navTab_menuItem_DELETE;
     }
 }
 
