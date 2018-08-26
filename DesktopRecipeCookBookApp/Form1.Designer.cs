@@ -695,12 +695,12 @@
             // 
             // mnu_NavTabs
             // 
-            this.mnu_New.Name = "mnu_New";
-            this.mnu_New.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.mnu_New.Size = new System.Drawing.Size(180, 22);
-            this.mnu_New.Text = "&New Recipe";
-            this.mnu_New.Click += new System.EventHandler(this.frmNewRecipe_Load);
-            this.mnu_New.DisplayStyleChanged += new System.EventHandler(this.frmNewRecipe_Load);
+            this.mnu_NewRecipeTab.Name = "mnu_New";
+            this.mnu_NewRecipeTab.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.mnu_NewRecipeTab.Size = new System.Drawing.Size(180, 22);
+            this.mnu_NewRecipeTab.Text = "&New Recipe";
+            this.mnu_NewRecipeTab.Click += new System.EventHandler(this.frmNewRecipe_Load);
+            this.mnu_NewRecipeTab.DisplayStyleChanged += new System.EventHandler(this.frmNewRecipe_Load);
             // 
             // mnu_NewRecipeTab
             // 
@@ -779,7 +779,7 @@
             this.Name = "frmNewRecipe";
             this.Text = "NewRecipeForm";
             this.Load += new System.EventHandler(this.frmNewRecipe_Load);
-            this.tbc_Recipe.ResumeLayout(false);
+            this.tbc_RecipeTab.ResumeLayout(false);
             this.tab_New.ResumeLayout(false);
             this.tab_New.PerformLayout();
             this.grb_CategoryChboxes.ResumeLayout(false);
