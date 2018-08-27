@@ -101,30 +101,57 @@ namespace DesktopRecipeCookBookApp
         } // end mnu_NavTabs_Click
 
 
+
+        //***************************************************************************************
+        // NAVIGATION MENUSTRIP MENU ITEMS EVENT LISTENERS THAT WILL CONTROL TAB PAGES ON SELCTED ITEM CLICKED
+        //***************************************************************************************
+        public static int count = 0;
+
+        private void mnu_NewMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigationMenuTabPageSelection();
+        }
+
+        private void mnu_ViewMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigationMenuTabPageSelection();
+        }
+
+        private void mnu_EditMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigationMenuTabPageSelection();
+        }
+
+        private void mnu_DeleteMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigationMenuTabPageSelection();
+        }
+
+
         //**********************************************************************************************
         //  Nav Menu item on click event calls the NavigationMenuTabPageSelection(); method on each clicked item
         //***********************************************************************************************
-        public static int count = 0;
+     
 
-        private void mnu_NewRecipeTab_Click(object sender, EventArgs e)
-        {
-            NavigationMenuTabPageSelection();
-        }
+        //private void mnu_NewRecipeTab_Click(object sender, EventArgs e)
+        //{
+        //    NavigationMenuTabPageSelection();
+        //}
 
-        private void mnu_ViewRecipeTab_Click(object sender, EventArgs e)
-        {
-            NavigationMenuTabPageSelection();
-        }
+        //private void mnu_ViewRecipeTab_Click(object sender, EventArgs e)
+        //{
+        //    NavigationMenuTabPageSelection();
+        //}
 
-        private void mnu_EditRecipeTab_Click(object sender, EventArgs e)
-        {
-            NavigationMenuTabPageSelection();
-        }
+        //private void mnu_EditRecipeTab_Click(object sender, EventArgs e)
+        //{
+        //    NavigationMenuTabPageSelection();
+        //}
 
-        private void mnu_DeleteRecipeTab_Click(object sender, EventArgs e)
-        {
-            NavigationMenuTabPageSelection();
-        }
+        //private void mnu_DeleteRecipeTab_Click(object sender, EventArgs e)
+        //{
+        //    NavigationMenuTabPageSelection();
+        //}
 
 
 
@@ -159,29 +186,6 @@ namespace DesktopRecipeCookBookApp
         private void PopulateEditRecipeTab()
         {
             throw new NotImplementedException();
-        }
-
-    //***************************************************************************************
-    // NAVIGATION MENUSTRIP MENU ITEMS EVENT LISTENERS THAT WILL CONTROL TAB PAGES ON SELCTED ITEM CLICKED
-    //***************************************************************************************
-        private void mnu_NewMenuItem_Click(object sender, EventArgs e)
-        {
-            NavigationMenuTabPageSelection();
-        }
-
-        private void mnu_ViewMenuItem_Click(object sender, EventArgs e)
-        {
-            NavigationMenuTabPageSelection();
-        }
-
-        private void mnu_EditMenuItem_Click(object sender, EventArgs e)
-        {
-            NavigationMenuTabPageSelection();
-        }
-
-        private void mnu_DeleteMenuItem_Click(object sender, EventArgs e)
-        {
-            NavigationMenuTabPageSelection();
         }
     }
 }
