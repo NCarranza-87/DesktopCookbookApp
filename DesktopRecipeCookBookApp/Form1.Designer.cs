@@ -492,7 +492,7 @@
             this.btn_Save.BackColor = System.Drawing.Color.Olive;
             this.btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Save.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Save.Location = new System.Drawing.Point(189, 615);
+            this.btn_Save.Location = new System.Drawing.Point(215, 613);
             this.btn_Save.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(183, 46);
@@ -589,7 +589,6 @@
             this.tab_Delete.TabIndex = 3;
             this.tab_Delete.Text = "DELETE RECIPE";
             this.tab_Delete.ToolTipText = "Delete recipe permanently";
-            // this.tab_Delete.Click += new System.EventHandler(this.tab_Delete_Click);
             // 
             // btn_Delete
             // 
@@ -788,7 +787,6 @@
             this.mnu_NewRecipeTab.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.mnu_NewRecipeTab.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
             this.mnu_NewRecipeTab.ToolTipText = "New Recipe";
-            this.mnu_NewRecipeTab.Click += new System.EventHandler(this.mnu_NewRecipeTab_Click);
             // 
             // mnu_ViewRecipeTab
             // 
@@ -800,7 +798,6 @@
             this.mnu_ViewRecipeTab.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
             this.mnu_ViewRecipeTab.Size = new System.Drawing.Size(225, 24);
             this.mnu_ViewRecipeTab.Text = "&VIEW Existing Recipe";
-            this.mnu_ViewRecipeTab.Click += new System.EventHandler(this.mnu_ViewRecipeTab_Click);
             // 
             // mnu_EditRecipeTab
             // 
@@ -816,7 +813,6 @@
             this.mnu_EditRecipeTab.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.mnu_EditRecipeTab.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
             this.mnu_EditRecipeTab.ToolTipText = "Edit an existing recipe ";
-            this.mnu_EditRecipeTab.Click += new System.EventHandler(this.mnu_EditRecipeTab_Click);
             // 
             // mnu_DeleteRecipeTab
             // 
@@ -832,7 +828,6 @@
             this.mnu_DeleteRecipeTab.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.mnu_DeleteRecipeTab.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
             this.mnu_DeleteRecipeTab.ToolTipText = "Permanently delete an existing  recipe";
-            this.mnu_DeleteRecipeTab.Click += new System.EventHandler(this.mnu_DeleteRecipeTab_Click);
             // 
             // frmNewRecipe
             // 
