@@ -57,6 +57,7 @@
     <Compile Include="category.cs">
       <DependentUpon>RecipeCookbookModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="DBHelper.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

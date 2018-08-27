@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace DesktopRecipeCookBookApp
 {
@@ -108,36 +109,66 @@ namespace DesktopRecipeCookBookApp
         private void mnu_NewRecipeTab_Click(object sender, EventArgs e)
         {
             NavigationMenuTabPageSelection();
+            PopulateNewRecipe();
         }
 
         private void mnu_ViewRecipeTab_Click(object sender, EventArgs e)
         {
             NavigationMenuTabPageSelection();
+            PopulateViewRecipe();
         }
 
         private void mnu_EditRecipeTab_Click(object sender, EventArgs e)
         {
             NavigationMenuTabPageSelection();
+            PopulateEditRecipeTab();
         }
 
         private void mnu_DeleteRecipeTab_Click(object sender, EventArgs e)
         {
             NavigationMenuTabPageSelection();
+            PopulateDeleteRecipeTab();
         }
 
-        private void CreateNewRecipeTab(object sender, EventArgs e)
-        {
-            PopulateNewRecipe();
-        }
-
-        private void PopulateNewRecipe()
+        private void PopulateDeleteRecipeTab()
         {
             
         }
 
-        private void ViewRecipeTab(object sender, EventArgs e)
+        private void PopulateNewRecipe()
         {
-            PopulateViewRecipe();
+            string recipeName = txt_NewName.Text;
+            string recipeDespt = txt_NewDescrip.Text;
+            string recipeServings = txt_NewServeAmt.Text;
+            string recipeTemp = txt_NewTemp.Text;
+            string recipePrep = txt_NewPrep.Text;
+            string recipeCookTime = txt_NewCook.Text;
+            string reciepNeeds = txt_NewKitchen.Text;
+            string recipeIngreds = txt_NewIngred.Text;
+            string recipeDirections = txt_NewDirections.Text;
+            string recipeTipsNotes = txt_NewTips.Text;
+            checkedListBox1.Enabled = false;
+
+            var addRecipe = new recipe();
+            addRecipe.recipeTitle = recipeName;
+            addRecipe.recipeDescrip = recipeDespt;
+            addRecipe.recipeYield = recipeServings;
+            addRecipe.recipeTemp = recipeTemp;
+            addRecipe.recipePrepTime = recipePrep;
+            addRecipe.recipeCookTime = recipeCookTime;
+            addRecipe.recipeNeed = reciepNeeds;
+            addRecipe.recipeIngred = recipeIngreds;
+            addRecipe.recipeSteps = recipeDirections;
+            addRecipe.recipeTips = recipeTipsNotes;
+            try
+            {
+                RecipeDB.InsertRecipe(addRecipe);
+            }
+            catch 
+            {
+                MessageBox.Show("Cannot insert new recipe!");
+            }
+            
         }
 
         private void PopulateViewRecipe()
@@ -148,19 +179,17 @@ namespace DesktopRecipeCookBookApp
                  select r).ToList();
         }
 
-        private void EditRecipeTab(object sender, EventArgs e)
+        private static SqlConnection GeTConnection()
         {
-            PopulateEditRecipeTab();
+            SqlConnection con = DBHelper.GetSqlConnectionString();
+            return con;
         }
 
         private void PopulateEditRecipeTab()
         {
-            throw new NotImplementedException();
+            
         }
 
-        private void tab_Delete_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

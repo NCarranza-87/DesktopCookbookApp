@@ -465,7 +465,6 @@
             this.tab_New.TabIndex = 0;
             this.tab_New.Text = "NEW RECIPE";
             this.tab_New.ToolTipText = "ADD a new recipe";
-            this.tab_New.Click += new System.EventHandler(this.CreateNewRecipeTab);
             // 
             // btn_Save
             // 
@@ -521,7 +520,6 @@
             this.tab_View.TabIndex = 1;
             this.tab_View.Text = "VIEW RECIPE";
             this.tab_View.ToolTipText = "View your recipes";
-            this.tab_View.Click += new System.EventHandler(this.ViewRecipeTab);
             // 
             // tab_Edit
             // 
@@ -535,7 +533,6 @@
             this.tab_Edit.TabIndex = 2;
             this.tab_Edit.Text = "EDIT RECIPE";
             this.tab_Edit.ToolTipText = "Edit recipe";
-            this.tab_Edit.Click += new System.EventHandler(this.EditRecipeTab);
             // 
             // comboBox2
             // 
@@ -561,7 +558,6 @@
             this.tab_Delete.TabIndex = 3;
             this.tab_Delete.Text = "DELETE RECIPE";
             this.tab_Delete.ToolTipText = "Delete recipe permanently";
-            this.tab_Delete.Click += new System.EventHandler(this.tab_Delete_Click);
             // 
             // btn_Delete
             // 
@@ -693,15 +689,6 @@
             this.mnu_Quit.Text = "&QUIT ";
             this.mnu_Quit.Click += new System.EventHandler(this.mnu_Quit_Click);
             // 
-            // mnu_NavTabs
-            // 
-            this.mnu_New.Name = "mnu_New";
-            this.mnu_New.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.mnu_New.Size = new System.Drawing.Size(180, 22);
-            this.mnu_New.Text = "&New Recipe";
-            this.mnu_New.Click += new System.EventHandler(this.frmNewRecipe_Load);
-            this.mnu_New.DisplayStyleChanged += new System.EventHandler(this.frmNewRecipe_Load);
-            // 
             // mnu_NewRecipeTab
             // 
             this.mnu_NewRecipeTab.BackColor = System.Drawing.Color.PeachPuff;
@@ -779,7 +766,6 @@
             this.Name = "frmNewRecipe";
             this.Text = "NewRecipeForm";
             this.Load += new System.EventHandler(this.frmNewRecipe_Load);
-            this.tbc_Recipe.ResumeLayout(false);
             this.tab_New.ResumeLayout(false);
             this.tab_New.PerformLayout();
             this.grb_CategoryChboxes.ResumeLayout(false);
