@@ -20,7 +20,7 @@ namespace DesktopRecipeCookBookApp
 
         private void frmNewRecipe_Load(object sender, EventArgs e)
         {
-
+            NavigationMenuTabPageSelection();
         }
 
         //**********************************************************************
@@ -83,11 +83,12 @@ namespace DesktopRecipeCookBookApp
         private void mnu_NavTabs_Click(object sender, EventArgs e)
         {
             // casting ToolStripMenuItem to mnu_Option
-            ToolStripMenuItem mnu_Option = (ToolStripMenuItem)sender;
+            ToolStripItem mnu_Option = (ToolStripItem)sender;
 
             // create collection of tabs of tabContro1
             // check every tab text is equal to clicked menu_Item then select the tab
             TabControl.TabPageCollection tab_Item = tbc_RecipeTab.TabPages;
+
             foreach (TabPage tb in tab_Item)
             {
                 if (mnu_Option.Text == tb.Text)
@@ -125,6 +126,8 @@ namespace DesktopRecipeCookBookApp
             NavigationMenuTabPageSelection();
         }
 
+
+
         private void CreateNewRecipeTab(object sender, EventArgs e)
         {
             PopulateNewRecipe();
@@ -132,7 +135,7 @@ namespace DesktopRecipeCookBookApp
 
         private void PopulateNewRecipe()
         {
-            
+            throw new NotImplementedException();
         }
 
         private void ViewRecipeTab(object sender, EventArgs e)
@@ -158,9 +161,27 @@ namespace DesktopRecipeCookBookApp
             throw new NotImplementedException();
         }
 
-        private void tab_Delete_Click(object sender, EventArgs e)
+    //***************************************************************************************
+    // NAVIGATION MENUSTRIP MENU ITEMS EVENT LISTENERS THAT WILL CONTROL TAB PAGES ON SELCTED ITEM CLICKED
+    //***************************************************************************************
+        private void mnu_NewMenuItem_Click(object sender, EventArgs e)
         {
+            NavigationMenuTabPageSelection();
+        }
 
+        private void mnu_ViewMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigationMenuTabPageSelection();
+        }
+
+        private void mnu_EditMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigationMenuTabPageSelection();
+        }
+
+        private void mnu_DeleteMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigationMenuTabPageSelection();
         }
     }
 }

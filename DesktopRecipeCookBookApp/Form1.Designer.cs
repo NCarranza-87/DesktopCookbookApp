@@ -589,7 +589,7 @@
             this.tab_Delete.TabIndex = 3;
             this.tab_Delete.Text = "DELETE RECIPE";
             this.tab_Delete.ToolTipText = "Delete recipe permanently";
-            this.tab_Delete.Click += new System.EventHandler(this.tab_Delete_Click);
+            // this.tab_Delete.Click += new System.EventHandler(this.tab_Delete_Click);
             // 
             // btn_Delete
             // 
@@ -713,7 +713,7 @@
             this.mnu_Quit.ForeColor = System.Drawing.Color.PeachPuff;
             this.mnu_Quit.Name = "mnu_Quit";
             this.mnu_Quit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
-            this.mnu_Quit.Size = new System.Drawing.Size(180, 24);
+            this.mnu_Quit.Size = new System.Drawing.Size(146, 24);
             this.mnu_Quit.Text = "&QUIT ";
             this.mnu_Quit.Click += new System.EventHandler(this.mnu_Quit_Click);
             // 
@@ -742,6 +742,7 @@
             this.mnu_NewMenuItem.Name = "mnu_NewMenuItem";
             this.mnu_NewMenuItem.Size = new System.Drawing.Size(180, 24);
             this.mnu_NewMenuItem.Text = "NEW Recipe";
+            this.mnu_NewMenuItem.Click += new System.EventHandler(this.mnu_NewMenuItem_Click);
             // 
             // mnu_ViewMenuItem
             // 
@@ -751,6 +752,7 @@
             this.mnu_ViewMenuItem.Name = "mnu_ViewMenuItem";
             this.mnu_ViewMenuItem.Size = new System.Drawing.Size(180, 24);
             this.mnu_ViewMenuItem.Text = "VIEW Recipe";
+            this.mnu_ViewMenuItem.Click += new System.EventHandler(this.mnu_ViewMenuItem_Click);
             // 
             // mnu_EditMenuItem
             // 
@@ -760,6 +762,7 @@
             this.mnu_EditMenuItem.Name = "mnu_EditMenuItem";
             this.mnu_EditMenuItem.Size = new System.Drawing.Size(180, 24);
             this.mnu_EditMenuItem.Text = "EDIT Recipe";
+            this.mnu_EditMenuItem.Click += new System.EventHandler(this.mnu_EditMenuItem_Click);
             // 
             // mnu_DeleteMenuItem
             // 
@@ -769,6 +772,7 @@
             this.mnu_DeleteMenuItem.Name = "mnu_DeleteMenuItem";
             this.mnu_DeleteMenuItem.Size = new System.Drawing.Size(180, 24);
             this.mnu_DeleteMenuItem.Text = "DELETE Recipe";
+            this.mnu_DeleteMenuItem.Click += new System.EventHandler(this.mnu_DeleteMenuItem_Click);
             // 
             // mnu_NewRecipeTab
             // 
