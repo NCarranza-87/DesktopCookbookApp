@@ -122,8 +122,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\393.jpg" />
     <Content Include="Images\newform.jpg" />
-    <Content Include="Images\viewback.jpg" />
+    <Content Include="Images\view_board.jpg" />
     <Content Include="RecipeCookbookModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>RecipeCookbookModel.edmx</DependentUpon>
