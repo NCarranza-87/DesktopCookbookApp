@@ -20,7 +20,7 @@ namespace DesktopRecipeCookBookApp
 
         private void frmNewRecipe_Load(object sender, EventArgs e)
         {
-
+            NavigationMenuTabPageSelection();
         }
 
         //**********************************************************************
@@ -83,11 +83,12 @@ namespace DesktopRecipeCookBookApp
         private void mnu_NavTabs_Click(object sender, EventArgs e)
         {
             // casting ToolStripMenuItem to mnu_Option
-            ToolStripMenuItem mnu_Option = (ToolStripMenuItem)sender;
+            ToolStripItem mnu_Option = (ToolStripItem)sender;
 
             // create collection of tabs of tabContro1
             // check every tab text is equal to clicked menu_Item then select the tab
             TabControl.TabPageCollection tab_Item = tbc_RecipeTab.TabPages;
+
             foreach (TabPage tb in tab_Item)
             {
                 if (mnu_Option.Text == tb.Text)
@@ -100,30 +101,59 @@ namespace DesktopRecipeCookBookApp
         } // end mnu_NavTabs_Click
 
 
+
+        //***************************************************************************************
+        // NAVIGATION MENUSTRIP MENU ITEMS EVENT LISTENERS THAT WILL CONTROL TAB PAGES ON SELCTED ITEM CLICKED
+        //***************************************************************************************
+        public static int count = 0;
+
+        private void mnu_NewMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigationMenuTabPageSelection();
+        }
+
+        private void mnu_ViewMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigationMenuTabPageSelection();
+        }
+
+        private void mnu_EditMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigationMenuTabPageSelection();
+        }
+
+        private void mnu_DeleteMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigationMenuTabPageSelection();
+        }
+
+
         //**********************************************************************************************
         //  Nav Menu item on click event calls the NavigationMenuTabPageSelection(); method on each clicked item
         //***********************************************************************************************
-        public static int count = 0;
+     
 
-        private void mnu_NewRecipeTab_Click(object sender, EventArgs e)
-        {
-            NavigationMenuTabPageSelection();
-        }
+        //private void mnu_NewRecipeTab_Click(object sender, EventArgs e)
+        //{
+        //    NavigationMenuTabPageSelection();
+        //}
 
-        private void mnu_ViewRecipeTab_Click(object sender, EventArgs e)
-        {
-            NavigationMenuTabPageSelection();
-        }
+        //private void mnu_ViewRecipeTab_Click(object sender, EventArgs e)
+        //{
+        //    NavigationMenuTabPageSelection();
+        //}
 
-        private void mnu_EditRecipeTab_Click(object sender, EventArgs e)
-        {
-            NavigationMenuTabPageSelection();
-        }
+        //private void mnu_EditRecipeTab_Click(object sender, EventArgs e)
+        //{
+        //    NavigationMenuTabPageSelection();
+        //}
 
-        private void mnu_DeleteRecipeTab_Click(object sender, EventArgs e)
-        {
-            NavigationMenuTabPageSelection();
-        }
+        //private void mnu_DeleteRecipeTab_Click(object sender, EventArgs e)
+        //{
+        //    NavigationMenuTabPageSelection();
+        //}
+
+
 
         private void CreateNewRecipeTab(object sender, EventArgs e)
         {
@@ -132,7 +162,7 @@ namespace DesktopRecipeCookBookApp
 
         private void PopulateNewRecipe()
         {
-            
+            throw new NotImplementedException();
         }
 
         private void ViewRecipeTab(object sender, EventArgs e)
@@ -156,11 +186,6 @@ namespace DesktopRecipeCookBookApp
         private void PopulateEditRecipeTab()
         {
             throw new NotImplementedException();
-        }
-
-        private void tab_Delete_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
