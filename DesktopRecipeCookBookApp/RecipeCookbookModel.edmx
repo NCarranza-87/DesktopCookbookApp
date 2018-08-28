@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="TeamDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="TeamDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="category">
           <Key>
             <PropertyRef Name="categoryId" />
@@ -16,7 +16,7 @@
           <Key>
             <PropertyRef Name="recipeId" />
           </Key>
-          <Property Name="recipeId" Type="int" Nullable="false" />
+          <Property Name="recipeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="recipeTitle" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="recipeDescrip" Type="varchar" MaxLength="1000" Nullable="false" />
           <Property Name="recipeNeed" Type="varchar" MaxLength="500" Nullable="false" />
@@ -41,8 +41,7 @@
           <EntitySet Name="recipe" EntityType="Self.recipe" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="recipecategory" EntityType="Self.recipecategory" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="TeamDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
