@@ -129,7 +129,7 @@ namespace DesktopRecipeCookBookApp
         private void mnu_DeleteMenuItem_Click(object sender, EventArgs e)
         {
             NavigationMenuTabPageSelection();
-            PopulateDeleteRecipeTab();
+         //   PopulateDeleteRecipeTab();
         }
 
 
@@ -190,15 +190,15 @@ namespace DesktopRecipeCookBookApp
             addRecipe.recipeIngred = recipeIngreds;
             addRecipe.recipeSteps = recipeDirections;
             addRecipe.recipeTips = recipeTipsNotes;
-            try
-            {
-                RecipeDB.InsertRecipe(addRecipe);
-            }
-            catch 
-            {
-                MessageBox.Show("Cannot insert new recipe!");
-            }
-         
+            //try
+            //{
+            //    RecipeDB.InsertRecipe(addRecipe);
+            //}
+            //catch 
+            //{
+            //    MessageBox.Show("Cannot insert new recipe!");
+            //}
+            RecipeDB.InsertRecipe(addRecipe);
         }
 
         private void ViewRecipeTab(object sender, EventArgs e)
@@ -214,17 +214,20 @@ namespace DesktopRecipeCookBookApp
                  select r).ToList();
         }
 
-        private static SqlConnection GeTConnection()
-        {
-            SqlConnection con = DBHelper.GetSqlConnectionString();
-            return con;
-        }
+        
 
         private void PopulateEditRecipeTab()
         {
             
         }
 
-        
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+            PopulateNewRecipe();
+            if( true )
+            {
+                MessageBox.Show("Your recipe was saved successfully!");
+            }
+        }
     }
 }

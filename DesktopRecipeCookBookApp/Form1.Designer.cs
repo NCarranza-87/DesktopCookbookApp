@@ -59,8 +59,57 @@
             this.label2 = new System.Windows.Forms.Label();
             this.grb_CategoryChboxes = new System.Windows.Forms.GroupBox();
             this.tab_View = new System.Windows.Forms.TabPage();
+            this.lst_ViewTips = new System.Windows.Forms.ListView();
+            this.lst_ViewDirections = new System.Windows.Forms.ListView();
+            this.lst_ViewDescrip = new System.Windows.Forms.ListView();
+            this.lst_ViewName = new System.Windows.Forms.ListView();
+            this.lst_ViewKitchen = new System.Windows.Forms.ListView();
+            this.lst_ViewIngred = new System.Windows.Forms.ListView();
+            this.lst_ViewServeAmt = new System.Windows.Forms.ListView();
+            this.lst_ViewTemp = new System.Windows.Forms.ListView();
+            this.lst_ViewCook = new System.Windows.Forms.ListView();
+            this.lst_ViewPrep = new System.Windows.Forms.ListView();
+            this.lst_ViewCategory = new System.Windows.Forms.ListView();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             this.tab_Edit = new System.Windows.Forms.TabPage();
+            this.btn_SaveEdits = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.grb_EditCategoryChBxs = new System.Windows.Forms.GroupBox();
+            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txt_EditCook = new System.Windows.Forms.TextBox();
             this.cbo_RecipeNameList = new System.Windows.Forms.ComboBox();
+            this.txt_EditTips = new System.Windows.Forms.TextBox();
+            this.txt_EditDirections = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txt_EditKitchen = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txt_EditIngred = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txt_EditDescrip = new System.Windows.Forms.TextBox();
+            this.txt_EditServeAmt = new System.Windows.Forms.TextBox();
+            this.txt_EditName = new System.Windows.Forms.TextBox();
+            this.txt_EditTemp = new System.Windows.Forms.TextBox();
+            this.txt_EditPrep = new System.Windows.Forms.TextBox();
             this.tab_Delete = new System.Windows.Forms.TabPage();
             this.btn_Delete = new System.Windows.Forms.Button();
             this.cmb_DeleteList = new System.Windows.Forms.ComboBox();
@@ -86,64 +135,15 @@
             this.mnu_ViewRecipeTab = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_EditRecipeTab = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_DeleteRecipeTab = new System.Windows.Forms.ToolStripMenuItem();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.btn_SaveEdits = new System.Windows.Forms.Button();
-            this.grb_EditCategoryChBxs = new System.Windows.Forms.GroupBox();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
-            this.txt_EditCook = new System.Windows.Forms.TextBox();
-            this.txt_EditTips = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txt_EditDirections = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txt_EditKitchen = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.txt_EditIngred = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.txt_EditServeAmt = new System.Windows.Forms.TextBox();
-            this.txt_EditTemp = new System.Windows.Forms.TextBox();
-            this.txt_EditPrep = new System.Windows.Forms.TextBox();
-            this.txt_EditName = new System.Windows.Forms.TextBox();
-            this.txt_EditDescrip = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.lst_ViewCategory = new System.Windows.Forms.ListView();
-            this.lst_ViewTemp = new System.Windows.Forms.ListView();
-            this.lst_ViewPrep = new System.Windows.Forms.ListView();
-            this.lst_ViewCook = new System.Windows.Forms.ListView();
-            this.lst_ViewServeAmt = new System.Windows.Forms.ListView();
-            this.lst_ViewIngred = new System.Windows.Forms.ListView();
-            this.lst_ViewKitchen = new System.Windows.Forms.ListView();
-            this.lst_ViewName = new System.Windows.Forms.ListView();
-            this.lst_ViewDescrip = new System.Windows.Forms.ListView();
-            this.lst_ViewDirections = new System.Windows.Forms.ListView();
-            this.lst_ViewTips = new System.Windows.Forms.ListView();
             this.tbc_RecipeTab.SuspendLayout();
             this.tab_New.SuspendLayout();
             this.grb_CategoryChboxes.SuspendLayout();
             this.tab_View.SuspendLayout();
             this.tab_Edit.SuspendLayout();
+            this.grb_EditCategoryChBxs.SuspendLayout();
             this.tab_Delete.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.grb_EditCategoryChBxs.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblAddPage
@@ -531,7 +531,7 @@
             this.tab_New.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tab_New.Name = "tab_New";
             this.tab_New.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tab_New.Size = new System.Drawing.Size(622, 727);
+            this.tab_New.Size = new System.Drawing.Size(622, 799);
             this.tab_New.TabIndex = 0;
             this.tab_New.Text = "NEW RECIPE";
             this.tab_New.ToolTipText = "ADD a new recipe";
@@ -548,6 +548,7 @@
             this.btn_Save.TabIndex = 12;
             this.btn_Save.Text = "SAVE RECIPE";
             this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // label2
             // 
@@ -620,684 +621,152 @@
             this.tab_View.Text = "VIEW RECIPE";
             this.tab_View.ToolTipText = "View your recipes";
             // 
-            // tab_Edit
-            // 
-            this.tab_Edit.BackColor = System.Drawing.Color.LemonChiffon;
-            this.tab_Edit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tab_Edit.BackgroundImage")));
-            this.tab_Edit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tab_Edit.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tab_Edit.Controls.Add(this.btn_SaveEdits);
-            this.tab_Edit.Controls.Add(this.label13);
-            this.tab_Edit.Controls.Add(this.grb_EditCategoryChBxs);
-            this.tab_Edit.Controls.Add(this.label12);
-            this.tab_Edit.Controls.Add(this.txt_EditCook);
-            this.tab_Edit.Controls.Add(this.cbo_RecipeNameList);
-            this.tab_Edit.Controls.Add(this.txt_EditTips);
-            this.tab_Edit.Controls.Add(this.txt_EditDirections);
-            this.tab_Edit.Controls.Add(this.label14);
-            this.tab_Edit.Controls.Add(this.label23);
-            this.tab_Edit.Controls.Add(this.label22);
-            this.tab_Edit.Controls.Add(this.label15);
-            this.tab_Edit.Controls.Add(this.label21);
-            this.tab_Edit.Controls.Add(this.txt_EditKitchen);
-            this.tab_Edit.Controls.Add(this.label20);
-            this.tab_Edit.Controls.Add(this.label16);
-            this.tab_Edit.Controls.Add(this.label19);
-            this.tab_Edit.Controls.Add(this.txt_EditIngred);
-            this.tab_Edit.Controls.Add(this.label18);
-            this.tab_Edit.Controls.Add(this.label17);
-            this.tab_Edit.Controls.Add(this.txt_EditDescrip);
-            this.tab_Edit.Controls.Add(this.txt_EditServeAmt);
-            this.tab_Edit.Controls.Add(this.txt_EditName);
-            this.tab_Edit.Controls.Add(this.txt_EditTemp);
-            this.tab_Edit.Controls.Add(this.txt_EditPrep);
-            this.tab_Edit.ForeColor = System.Drawing.Color.PeachPuff;
-            this.tab_Edit.Location = new System.Drawing.Point(4, 34);
-            this.tab_Edit.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tab_Edit.Name = "tab_Edit";
-            this.tab_Edit.Size = new System.Drawing.Size(622, 799);
-            this.tab_Edit.TabIndex = 2;
-            this.tab_Edit.Text = "EDIT RECIPE";
-            this.tab_Edit.ToolTipText = "Edit recipe";
-            // 
-            // cbo_RecipeNameList
-            // 
-            this.cbo_RecipeNameList.BackColor = System.Drawing.Color.PeachPuff;
-            this.cbo_RecipeNameList.ForeColor = System.Drawing.Color.Olive;
-            this.cbo_RecipeNameList.FormattingEnabled = true;
-            this.cbo_RecipeNameList.Location = new System.Drawing.Point(289, 65);
-            this.cbo_RecipeNameList.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.cbo_RecipeNameList.Name = "cbo_RecipeNameList";
-            this.cbo_RecipeNameList.Size = new System.Drawing.Size(289, 27);
-            this.cbo_RecipeNameList.TabIndex = 1;
-            this.cbo_RecipeNameList.Text = "Choose an EXISTING Recipe";
-            // 
-            // tab_Delete
-            // 
-            this.tab_Delete.BackColor = System.Drawing.Color.DarkKhaki;
-            this.tab_Delete.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tab_Delete.Controls.Add(this.btn_Delete);
-            this.tab_Delete.Controls.Add(this.cmb_DeleteList);
-            this.tab_Delete.ForeColor = System.Drawing.Color.PeachPuff;
-            this.tab_Delete.Location = new System.Drawing.Point(4, 34);
-            this.tab_Delete.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tab_Delete.Name = "tab_Delete";
-            this.tab_Delete.Size = new System.Drawing.Size(622, 727);
-            this.tab_Delete.TabIndex = 3;
-            this.tab_Delete.Text = "DELETE RECIPE";
-            this.tab_Delete.ToolTipText = "Delete recipe permanently";
-            // 
-            // btn_Delete
-            // 
-            this.btn_Delete.BackColor = System.Drawing.Color.Olive;
-            this.btn_Delete.Location = new System.Drawing.Point(149, 125);
-            this.btn_Delete.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btn_Delete.Name = "btn_Delete";
-            this.btn_Delete.Size = new System.Drawing.Size(129, 49);
-            this.btn_Delete.TabIndex = 20;
-            this.btn_Delete.Text = "DELETE RECIPE";
-            this.btn_Delete.UseVisualStyleBackColor = false;
-            // 
-            // cmb_DeleteList
-            // 
-            this.cmb_DeleteList.BackColor = System.Drawing.Color.PeachPuff;
-            this.cmb_DeleteList.ForeColor = System.Drawing.Color.Olive;
-            this.cmb_DeleteList.FormattingEnabled = true;
-            this.cmb_DeleteList.Location = new System.Drawing.Point(73, 55);
-            this.cmb_DeleteList.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.cmb_DeleteList.Name = "cmb_DeleteList";
-            this.cmb_DeleteList.Size = new System.Drawing.Size(289, 27);
-            this.cmb_DeleteList.TabIndex = 19;
-            this.cmb_DeleteList.Text = "Choose an EXISTING Recipe";
-            // 
-            // comboBoc
-            // 
-            this.comboBoc.BackColor = System.Drawing.Color.PeachPuff;
-            this.comboBoc.ForeColor = System.Drawing.Color.Olive;
-            this.comboBoc.FormattingEnabled = true;
-            this.comboBoc.Location = new System.Drawing.Point(109, 52);
-            this.comboBoc.Name = "comboBoc";
-            this.comboBoc.Size = new System.Drawing.Size(431, 21);
-            this.comboBoc.TabIndex = 33;
-            this.comboBoc.Text = "Choose an EXISTING Recipe";
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viewRecipesToolStripMenuItem,
-            this.createRecipeToolStripMenuItem,
-            this.saveRecipeToolStripMenuItem,
-            this.editRecipeToolStripMenuItem,
-            this.deleteRecipeToolStripMenuItem,
-            this.exitRecipeApplicationToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(143, 136);
-            // 
-            // viewRecipesToolStripMenuItem
-            // 
-            this.viewRecipesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripComboBox1});
-            this.viewRecipesToolStripMenuItem.Name = "viewRecipesToolStripMenuItem";
-            this.viewRecipesToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            this.viewRecipesToolStripMenuItem.Text = "View Recipes";
-            // 
-            // toolStripComboBox1
-            // 
-            this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 23);
-            // 
-            // createRecipeToolStripMenuItem
-            // 
-            this.createRecipeToolStripMenuItem.Name = "createRecipeToolStripMenuItem";
-            this.createRecipeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            // 
-            // saveRecipeToolStripMenuItem
-            // 
-            this.saveRecipeToolStripMenuItem.Name = "saveRecipeToolStripMenuItem";
-            this.saveRecipeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            // 
-            // editRecipeToolStripMenuItem
-            // 
-            this.editRecipeToolStripMenuItem.Name = "editRecipeToolStripMenuItem";
-            this.editRecipeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            // 
-            // deleteRecipeToolStripMenuItem
-            // 
-            this.deleteRecipeToolStripMenuItem.Name = "deleteRecipeToolStripMenuItem";
-            this.deleteRecipeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            // 
-            // exitRecipeApplicationToolStripMenuItem
-            // 
-            this.exitRecipeApplicationToolStripMenuItem.Name = "exitRecipeApplicationToolStripMenuItem";
-            this.exitRecipeApplicationToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            // 
-            // newRecipeToolStripMenuItem
-            // 
-            this.newRecipeToolStripMenuItem.Name = "newRecipeToolStripMenuItem";
-            this.newRecipeToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnu_Options,
-            this.mnu_NavTabs});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(880, 32);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // mnu_Options
-            // 
-            this.mnu_Options.BackColor = System.Drawing.Color.PeachPuff;
-            this.mnu_Options.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.mnu_Options.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnu_Quit});
-            this.mnu_Options.Font = new System.Drawing.Font("KG Covered By Your Grace", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnu_Options.ForeColor = System.Drawing.Color.Olive;
-            this.mnu_Options.Name = "mnu_Options";
-            this.mnu_Options.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)));
-            this.mnu_Options.Size = new System.Drawing.Size(92, 28);
-            this.mnu_Options.Text = "&FILE MENU";
-            this.mnu_Options.ToolTipText = "Application Options";
-            // 
-            // mnu_Quit
-            // 
-            this.mnu_Quit.BackColor = System.Drawing.Color.Olive;
-            this.mnu_Quit.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnu_Quit.ForeColor = System.Drawing.Color.PeachPuff;
-            this.mnu_Quit.Name = "mnu_Quit";
-            this.mnu_Quit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
-            this.mnu_Quit.Size = new System.Drawing.Size(180, 24);
-            this.mnu_Quit.Text = "&QUIT ";
-            this.mnu_Quit.Click += new System.EventHandler(this.mnu_Quit_Click);
-            // 
-            // mnu_NavTabs
-            // 
-            this.mnu_NavTabs.BackColor = System.Drawing.Color.Olive;
-            this.mnu_NavTabs.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnu_NewMenuItem,
-            this.mnu_ViewMenuItem,
-            this.mnu_EditMenuItem,
-            this.mnu_DeleteMenuItem});
-            this.mnu_NavTabs.Font = new System.Drawing.Font("Covered By Your Grace", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnu_NavTabs.ForeColor = System.Drawing.Color.PeachPuff;
-            this.mnu_NavTabs.Name = "mnu_NavTabs";
-            this.mnu_NavTabs.ShowShortcutKeys = false;
-            this.mnu_NavTabs.Size = new System.Drawing.Size(94, 28);
-            this.mnu_NavTabs.Text = "NAVIGATION";
-            this.mnu_NavTabs.Click += new System.EventHandler(this.frmNewRecipe_Load);
-            this.mnu_NavTabs.DisplayStyleChanged += new System.EventHandler(this.frmNewRecipe_Load);
-            // 
-            // mnu_NewMenuItem
-            // 
-            this.mnu_NewMenuItem.BackColor = System.Drawing.Color.Olive;
-            this.mnu_NewMenuItem.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnu_NewMenuItem.ForeColor = System.Drawing.Color.PeachPuff;
-            this.mnu_NewMenuItem.Name = "mnu_NewMenuItem";
-            this.mnu_NewMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.mnu_NewMenuItem.Text = "NEW Recipe";
-            this.mnu_NewMenuItem.Click += new System.EventHandler(this.mnu_NewMenuItem_Click);
-            // 
-            // mnu_ViewMenuItem
-            // 
-            this.mnu_ViewMenuItem.BackColor = System.Drawing.Color.Olive;
-            this.mnu_ViewMenuItem.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnu_ViewMenuItem.ForeColor = System.Drawing.Color.PeachPuff;
-            this.mnu_ViewMenuItem.Name = "mnu_ViewMenuItem";
-            this.mnu_ViewMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.mnu_ViewMenuItem.Text = "VIEW Recipe";
-            this.mnu_ViewMenuItem.Click += new System.EventHandler(this.mnu_ViewMenuItem_Click);
-            // 
-            // mnu_EditMenuItem
-            // 
-            this.mnu_EditMenuItem.BackColor = System.Drawing.Color.Olive;
-            this.mnu_EditMenuItem.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnu_EditMenuItem.ForeColor = System.Drawing.Color.PeachPuff;
-            this.mnu_EditMenuItem.Name = "mnu_EditMenuItem";
-            this.mnu_EditMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.mnu_EditMenuItem.Text = "EDIT Recipe";
-            this.mnu_EditMenuItem.Click += new System.EventHandler(this.mnu_EditMenuItem_Click);
-            // 
-            // mnu_DeleteMenuItem
-            // 
-            this.mnu_DeleteMenuItem.BackColor = System.Drawing.Color.Olive;
-            this.mnu_DeleteMenuItem.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnu_DeleteMenuItem.ForeColor = System.Drawing.Color.PeachPuff;
-            this.mnu_DeleteMenuItem.Name = "mnu_DeleteMenuItem";
-            this.mnu_DeleteMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.mnu_DeleteMenuItem.Text = "DELETE Recipe";
-            this.mnu_DeleteMenuItem.Click += new System.EventHandler(this.mnu_DeleteMenuItem_Click);
-            // 
-            // mnu_NewRecipeTab
-            // 
-            this.mnu_NewRecipeTab.BackColor = System.Drawing.Color.PeachPuff;
-            this.mnu_NewRecipeTab.CheckOnClick = true;
-            this.mnu_NewRecipeTab.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.mnu_NewRecipeTab.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnu_NewRecipeTab.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.mnu_NewRecipeTab.Name = "mnu_NewRecipeTab";
-            this.mnu_NewRecipeTab.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.mnu_NewRecipeTab.Size = new System.Drawing.Size(225, 24);
-            this.mnu_NewRecipeTab.Text = "&CREATE New Recipe";
-            this.mnu_NewRecipeTab.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.mnu_NewRecipeTab.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
-            this.mnu_NewRecipeTab.ToolTipText = "New Recipe";
-            // 
-            // mnu_ViewRecipeTab
-            // 
-            this.mnu_ViewRecipeTab.BackColor = System.Drawing.Color.PeachPuff;
-            this.mnu_ViewRecipeTab.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.mnu_ViewRecipeTab.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnu_ViewRecipeTab.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.mnu_ViewRecipeTab.Name = "mnu_ViewRecipeTab";
-            this.mnu_ViewRecipeTab.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.mnu_ViewRecipeTab.Size = new System.Drawing.Size(225, 24);
-            this.mnu_ViewRecipeTab.Text = "&VIEW Existing Recipe";
-            // 
-            // mnu_EditRecipeTab
-            // 
-            this.mnu_EditRecipeTab.BackColor = System.Drawing.Color.PeachPuff;
-            this.mnu_EditRecipeTab.CheckOnClick = true;
-            this.mnu_EditRecipeTab.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.mnu_EditRecipeTab.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnu_EditRecipeTab.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.mnu_EditRecipeTab.Name = "mnu_EditRecipeTab";
-            this.mnu_EditRecipeTab.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this.mnu_EditRecipeTab.Size = new System.Drawing.Size(225, 24);
-            this.mnu_EditRecipeTab.Text = "&EDIT Existing Recipe";
-            this.mnu_EditRecipeTab.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.mnu_EditRecipeTab.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
-            this.mnu_EditRecipeTab.ToolTipText = "Edit an existing recipe ";
-            // 
-            // mnu_DeleteRecipeTab
-            // 
-            this.mnu_DeleteRecipeTab.BackColor = System.Drawing.Color.PeachPuff;
-            this.mnu_DeleteRecipeTab.CheckOnClick = true;
-            this.mnu_DeleteRecipeTab.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.mnu_DeleteRecipeTab.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnu_DeleteRecipeTab.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.mnu_DeleteRecipeTab.Name = "mnu_DeleteRecipeTab";
-            this.mnu_DeleteRecipeTab.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
-            this.mnu_DeleteRecipeTab.Size = new System.Drawing.Size(225, 24);
-            this.mnu_DeleteRecipeTab.Text = "&DELETE Recipe";
-            this.mnu_DeleteRecipeTab.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.mnu_DeleteRecipeTab.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
-            this.mnu_DeleteRecipeTab.ToolTipText = "Permanently delete an existing  recipe";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.PeachPuff;
-            this.label12.Font = new System.Drawing.Font("KG Covered By Your Grace", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Olive;
-            this.label12.Location = new System.Drawing.Point(317, 30);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(252, 32);
-            this.label12.TabIndex = 18;
-            this.label12.Text = "Select the recipe you want to edit from the droplist.\r\nThe form will populate rec" +
-    "ipe so you can update recipe";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("KG Covered By Your Grace", 38F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Olive;
-            this.label13.Location = new System.Drawing.Point(29, 35);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(239, 57);
-            this.label13.TabIndex = 19;
-            this.label13.Text = "EDIT RECIPE";
-            // 
-            // btn_SaveEdits
-            // 
-            this.btn_SaveEdits.BackColor = System.Drawing.Color.Olive;
-            this.btn_SaveEdits.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_SaveEdits.Font = new System.Drawing.Font("Covered By Your Grace", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_SaveEdits.Location = new System.Drawing.Point(235, 633);
-            this.btn_SaveEdits.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btn_SaveEdits.Name = "btn_SaveEdits";
-            this.btn_SaveEdits.Size = new System.Drawing.Size(183, 46);
-            this.btn_SaveEdits.TabIndex = 13;
-            this.btn_SaveEdits.Text = "SAVE EDITS";
-            this.btn_SaveEdits.UseVisualStyleBackColor = false;
-            // 
-            // grb_EditCategoryChBxs
-            // 
-            this.grb_EditCategoryChBxs.BackColor = System.Drawing.Color.PeachPuff;
-            this.grb_EditCategoryChBxs.Controls.Add(this.checkedListBox2);
-            this.grb_EditCategoryChBxs.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.grb_EditCategoryChBxs.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grb_EditCategoryChBxs.ForeColor = System.Drawing.Color.Olive;
-            this.grb_EditCategoryChBxs.Location = new System.Drawing.Point(319, 241);
-            this.grb_EditCategoryChBxs.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.grb_EditCategoryChBxs.Name = "grb_EditCategoryChBxs";
-            this.grb_EditCategoryChBxs.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.grb_EditCategoryChBxs.Size = new System.Drawing.Size(256, 128);
-            this.grb_EditCategoryChBxs.TabIndex = 19;
-            this.grb_EditCategoryChBxs.TabStop = false;
-            this.grb_EditCategoryChBxs.Text = "Check all categories that apply :";
-            // 
-            // checkedListBox2
-            // 
-            this.checkedListBox2.BackColor = System.Drawing.Color.PeachPuff;
-            this.checkedListBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.checkedListBox2.ColumnWidth = 150;
-            this.checkedListBox2.Font = new System.Drawing.Font("Covered By Your Grace", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBox2.ForeColor = System.Drawing.Color.Olive;
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Items.AddRange(new object[] {
-            "Asian",
-            "Side Dish",
-            "No Bake",
-            "Baked",
-            "Seafood",
-            "Entree",
-            "Meat",
-            "Sandwich",
-            "BBQ",
-            "Pasta"});
-            this.checkedListBox2.Location = new System.Drawing.Point(23, 24);
-            this.checkedListBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.checkedListBox2.MultiColumn = true;
-            this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(307, 85);
-            this.checkedListBox2.TabIndex = 8;
-            this.checkedListBox2.ThreeDCheckBoxes = true;
-            // 
-            // txt_EditCook
-            // 
-            this.txt_EditCook.BackColor = System.Drawing.Color.PeachPuff;
-            this.txt_EditCook.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_EditCook.ForeColor = System.Drawing.Color.Olive;
-            this.txt_EditCook.Location = new System.Drawing.Point(195, 362);
-            this.txt_EditCook.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_EditCook.Name = "txt_EditCook";
-            this.txt_EditCook.Size = new System.Drawing.Size(95, 25);
-            this.txt_EditCook.TabIndex = 7;
-            this.txt_EditCook.Text = "  Mins";
-            // 
-            // txt_EditTips
-            // 
-            this.txt_EditTips.BackColor = System.Drawing.Color.PeachPuff;
-            this.txt_EditTips.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_EditTips.ForeColor = System.Drawing.Color.Olive;
-            this.txt_EditTips.Location = new System.Drawing.Point(195, 555);
-            this.txt_EditTips.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_EditTips.Multiline = true;
-            this.txt_EditTips.Name = "txt_EditTips";
-            this.txt_EditTips.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txt_EditTips.Size = new System.Drawing.Size(383, 29);
-            this.txt_EditTips.TabIndex = 12;
-            this.txt_EditTips.Text = "  *";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Olive;
-            this.label14.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.PeachPuff;
-            this.label14.Location = new System.Drawing.Point(85, 229);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.MinimumSize = new System.Drawing.Size(0, 30);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(70, 30);
-            this.label14.TabIndex = 27;
-            this.label14.Text = "SERVINGS :";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // txt_EditDirections
-            // 
-            this.txt_EditDirections.BackColor = System.Drawing.Color.PeachPuff;
-            this.txt_EditDirections.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_EditDirections.ForeColor = System.Drawing.Color.Olive;
-            this.txt_EditDirections.Location = new System.Drawing.Point(195, 509);
-            this.txt_EditDirections.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_EditDirections.Multiline = true;
-            this.txt_EditDirections.Name = "txt_EditDirections";
-            this.txt_EditDirections.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txt_EditDirections.Size = new System.Drawing.Size(383, 29);
-            this.txt_EditDirections.TabIndex = 11;
-            this.txt_EditDirections.Text = "  *";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Olive;
-            this.label15.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.PeachPuff;
-            this.label15.Location = new System.Drawing.Point(75, 318);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label15.MinimumSize = new System.Drawing.Size(0, 30);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(78, 30);
-            this.label15.TabIndex = 30;
-            this.label15.Text = "PREP TIME  :";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // txt_EditKitchen
-            // 
-            this.txt_EditKitchen.BackColor = System.Drawing.Color.PeachPuff;
-            this.txt_EditKitchen.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_EditKitchen.ForeColor = System.Drawing.Color.Olive;
-            this.txt_EditKitchen.Location = new System.Drawing.Point(195, 411);
-            this.txt_EditKitchen.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_EditKitchen.Multiline = true;
-            this.txt_EditKitchen.Name = "txt_EditKitchen";
-            this.txt_EditKitchen.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txt_EditKitchen.Size = new System.Drawing.Size(383, 28);
-            this.txt_EditKitchen.TabIndex = 9;
-            this.txt_EditKitchen.Text = "  *";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Olive;
-            this.label16.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.PeachPuff;
-            this.label16.Location = new System.Drawing.Point(83, 361);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.MinimumSize = new System.Drawing.Size(0, 30);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(70, 30);
-            this.label16.TabIndex = 31;
-            this.label16.Text = "COOK TIME :";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // txt_EditIngred
-            // 
-            this.txt_EditIngred.BackColor = System.Drawing.Color.PeachPuff;
-            this.txt_EditIngred.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_EditIngred.ForeColor = System.Drawing.Color.Olive;
-            this.txt_EditIngred.Location = new System.Drawing.Point(195, 458);
-            this.txt_EditIngred.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_EditIngred.MaximumSize = new System.Drawing.Size(4, 400);
-            this.txt_EditIngred.MinimumSize = new System.Drawing.Size(380, 29);
-            this.txt_EditIngred.Multiline = true;
-            this.txt_EditIngred.Name = "txt_EditIngred";
-            this.txt_EditIngred.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txt_EditIngred.Size = new System.Drawing.Size(380, 29);
-            this.txt_EditIngred.TabIndex = 10;
-            this.txt_EditIngred.Text = "  *";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Olive;
-            this.label17.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.PeachPuff;
-            this.label17.Location = new System.Drawing.Point(58, 276);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label17.MinimumSize = new System.Drawing.Size(0, 30);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(101, 30);
-            this.label17.TabIndex = 32;
-            this.label17.Text = "TEMPERATURE  :";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // txt_EditServeAmt
-            // 
-            this.txt_EditServeAmt.BackColor = System.Drawing.Color.PeachPuff;
-            this.txt_EditServeAmt.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_EditServeAmt.ForeColor = System.Drawing.Color.Olive;
-            this.txt_EditServeAmt.Location = new System.Drawing.Point(197, 230);
-            this.txt_EditServeAmt.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_EditServeAmt.Name = "txt_EditServeAmt";
-            this.txt_EditServeAmt.Size = new System.Drawing.Size(93, 25);
-            this.txt_EditServeAmt.TabIndex = 4;
-            this.txt_EditServeAmt.Text = "  #";
-            // 
-            // txt_EditTemp
-            // 
-            this.txt_EditTemp.BackColor = System.Drawing.Color.PeachPuff;
-            this.txt_EditTemp.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_EditTemp.ForeColor = System.Drawing.Color.Olive;
-            this.txt_EditTemp.Location = new System.Drawing.Point(196, 277);
-            this.txt_EditTemp.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_EditTemp.Name = "txt_EditTemp";
-            this.txt_EditTemp.Size = new System.Drawing.Size(94, 25);
-            this.txt_EditTemp.TabIndex = 5;
-            this.txt_EditTemp.Text = "  F";
-            // 
-            // txt_EditPrep
-            // 
-            this.txt_EditPrep.BackColor = System.Drawing.Color.PeachPuff;
-            this.txt_EditPrep.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_EditPrep.ForeColor = System.Drawing.Color.Olive;
-            this.txt_EditPrep.Location = new System.Drawing.Point(195, 319);
-            this.txt_EditPrep.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_EditPrep.Name = "txt_EditPrep";
-            this.txt_EditPrep.Size = new System.Drawing.Size(95, 25);
-            this.txt_EditPrep.TabIndex = 6;
-            this.txt_EditPrep.Text = "  Mins";
-            // 
-            // txt_EditName
-            // 
-            this.txt_EditName.BackColor = System.Drawing.Color.PeachPuff;
-            this.txt_EditName.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_EditName.ForeColor = System.Drawing.Color.Olive;
-            this.txt_EditName.Location = new System.Drawing.Point(195, 142);
-            this.txt_EditName.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_EditName.MinimumSize = new System.Drawing.Size(4, 28);
-            this.txt_EditName.Name = "txt_EditName";
-            this.txt_EditName.Size = new System.Drawing.Size(383, 28);
-            this.txt_EditName.TabIndex = 2;
-            this.txt_EditName.Text = "  Name of recipe";
-            // 
-            // txt_EditDescrip
-            // 
-            this.txt_EditDescrip.BackColor = System.Drawing.Color.PeachPuff;
-            this.txt_EditDescrip.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_EditDescrip.ForeColor = System.Drawing.Color.Olive;
-            this.txt_EditDescrip.Location = new System.Drawing.Point(195, 185);
-            this.txt_EditDescrip.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_EditDescrip.Multiline = true;
-            this.txt_EditDescrip.Name = "txt_EditDescrip";
-            this.txt_EditDescrip.Size = new System.Drawing.Size(383, 29);
-            this.txt_EditDescrip.TabIndex = 3;
-            this.txt_EditDescrip.Text = "  Brief note about recipe";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Olive;
-            this.label18.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.PeachPuff;
-            this.label18.Location = new System.Drawing.Point(69, 555);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label18.MinimumSize = new System.Drawing.Size(0, 30);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(88, 30);
-            this.label18.TabIndex = 38;
-            this.label18.Text = "TIPS / NOTES :";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Olive;
-            this.label19.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.PeachPuff;
-            this.label19.Location = new System.Drawing.Point(70, 142);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label19.MinimumSize = new System.Drawing.Size(0, 30);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(85, 30);
-            this.label19.TabIndex = 20;
-            this.label19.Text = "RECIPE TITLE :";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Olive;
-            this.label20.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.PeachPuff;
-            this.label20.Location = new System.Drawing.Point(81, 508);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label20.MinimumSize = new System.Drawing.Size(0, 30);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(75, 30);
-            this.label20.TabIndex = 37;
-            this.label20.Text = "DIRECTIONS :";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Olive;
-            this.label21.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.PeachPuff;
-            this.label21.Location = new System.Drawing.Point(74, 185);
-            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label21.MinimumSize = new System.Drawing.Size(0, 30);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(83, 30);
-            this.label21.TabIndex = 23;
-            this.label21.Text = "DESCRIPTION :";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.Olive;
-            this.label22.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.PeachPuff;
-            this.label22.Location = new System.Drawing.Point(73, 458);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label22.MinimumSize = new System.Drawing.Size(0, 30);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(84, 30);
-            this.label22.TabIndex = 35;
-            this.label22.Text = "INGREDIENTS :";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.Olive;
-            this.label23.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.PeachPuff;
-            this.label23.Location = new System.Drawing.Point(63, 410);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label23.MinimumSize = new System.Drawing.Size(0, 30);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(96, 30);
-            this.label23.TabIndex = 25;
-            this.label23.Text = "KITCHEN NEEDS :";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.Olive;
-            this.label24.Font = new System.Drawing.Font("KG Covered By Your Grace", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(20, 6);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(207, 48);
-            this.label24.TabIndex = 2;
-            this.label24.Text = "VIEW RECIPE";
+            // lst_ViewTips
+            // 
+            this.lst_ViewTips.BackColor = System.Drawing.Color.PeachPuff;
+            this.lst_ViewTips.Enabled = false;
+            this.lst_ViewTips.ForeColor = System.Drawing.Color.Olive;
+            this.lst_ViewTips.Location = new System.Drawing.Point(100, 627);
+            this.lst_ViewTips.Name = "lst_ViewTips";
+            this.lst_ViewTips.Size = new System.Drawing.Size(487, 112);
+            this.lst_ViewTips.TabIndex = 33;
+            this.lst_ViewTips.UseCompatibleStateImageBehavior = false;
+            // 
+            // lst_ViewDirections
+            // 
+            this.lst_ViewDirections.BackColor = System.Drawing.Color.PeachPuff;
+            this.lst_ViewDirections.Enabled = false;
+            this.lst_ViewDirections.ForeColor = System.Drawing.Color.Olive;
+            this.lst_ViewDirections.Location = new System.Drawing.Point(100, 415);
+            this.lst_ViewDirections.Name = "lst_ViewDirections";
+            this.lst_ViewDirections.Size = new System.Drawing.Size(487, 200);
+            this.lst_ViewDirections.TabIndex = 32;
+            this.lst_ViewDirections.UseCompatibleStateImageBehavior = false;
+            // 
+            // lst_ViewDescrip
+            // 
+            this.lst_ViewDescrip.BackColor = System.Drawing.Color.PeachPuff;
+            this.lst_ViewDescrip.Enabled = false;
+            this.lst_ViewDescrip.ForeColor = System.Drawing.Color.Olive;
+            this.lst_ViewDescrip.Location = new System.Drawing.Point(100, 121);
+            this.lst_ViewDescrip.Name = "lst_ViewDescrip";
+            this.lst_ViewDescrip.Size = new System.Drawing.Size(305, 90);
+            this.lst_ViewDescrip.TabIndex = 31;
+            this.lst_ViewDescrip.UseCompatibleStateImageBehavior = false;
+            // 
+            // lst_ViewName
+            // 
+            this.lst_ViewName.BackColor = System.Drawing.Color.PeachPuff;
+            this.lst_ViewName.Enabled = false;
+            this.lst_ViewName.ForeColor = System.Drawing.Color.Olive;
+            this.lst_ViewName.Location = new System.Drawing.Point(99, 81);
+            this.lst_ViewName.Name = "lst_ViewName";
+            this.lst_ViewName.Size = new System.Drawing.Size(292, 30);
+            this.lst_ViewName.TabIndex = 30;
+            this.lst_ViewName.UseCompatibleStateImageBehavior = false;
+            // 
+            // lst_ViewKitchen
+            // 
+            this.lst_ViewKitchen.BackColor = System.Drawing.Color.PeachPuff;
+            this.lst_ViewKitchen.Enabled = false;
+            this.lst_ViewKitchen.ForeColor = System.Drawing.Color.Olive;
+            this.lst_ViewKitchen.Location = new System.Drawing.Point(401, 235);
+            this.lst_ViewKitchen.Name = "lst_ViewKitchen";
+            this.lst_ViewKitchen.Size = new System.Drawing.Size(186, 163);
+            this.lst_ViewKitchen.Sorting = System.Windows.Forms.SortOrder.Ascending;
+            this.lst_ViewKitchen.TabIndex = 29;
+            this.lst_ViewKitchen.UseCompatibleStateImageBehavior = false;
+            // 
+            // lst_ViewIngred
+            // 
+            this.lst_ViewIngred.BackColor = System.Drawing.Color.PeachPuff;
+            this.lst_ViewIngred.Enabled = false;
+            this.lst_ViewIngred.ForeColor = System.Drawing.Color.Olive;
+            this.lst_ViewIngred.Location = new System.Drawing.Point(100, 235);
+            this.lst_ViewIngred.Name = "lst_ViewIngred";
+            this.lst_ViewIngred.Size = new System.Drawing.Size(209, 163);
+            this.lst_ViewIngred.TabIndex = 28;
+            this.lst_ViewIngred.UseCompatibleStateImageBehavior = false;
+            // 
+            // lst_ViewServeAmt
+            // 
+            this.lst_ViewServeAmt.BackColor = System.Drawing.Color.PeachPuff;
+            this.lst_ViewServeAmt.Enabled = false;
+            this.lst_ViewServeAmt.ForeColor = System.Drawing.Color.Olive;
+            this.lst_ViewServeAmt.Location = new System.Drawing.Point(498, 114);
+            this.lst_ViewServeAmt.Name = "lst_ViewServeAmt";
+            this.lst_ViewServeAmt.Size = new System.Drawing.Size(89, 30);
+            this.lst_ViewServeAmt.TabIndex = 27;
+            this.lst_ViewServeAmt.UseCompatibleStateImageBehavior = false;
+            // 
+            // lst_ViewTemp
+            // 
+            this.lst_ViewTemp.BackColor = System.Drawing.Color.PeachPuff;
+            this.lst_ViewTemp.Enabled = false;
+            this.lst_ViewTemp.ForeColor = System.Drawing.Color.Olive;
+            this.lst_ViewTemp.Location = new System.Drawing.Point(498, 81);
+            this.lst_ViewTemp.Name = "lst_ViewTemp";
+            this.lst_ViewTemp.Size = new System.Drawing.Size(89, 30);
+            this.lst_ViewTemp.TabIndex = 24;
+            this.lst_ViewTemp.UseCompatibleStateImageBehavior = false;
+            // 
+            // lst_ViewCook
+            // 
+            this.lst_ViewCook.BackColor = System.Drawing.Color.PeachPuff;
+            this.lst_ViewCook.Enabled = false;
+            this.lst_ViewCook.ForeColor = System.Drawing.Color.Olive;
+            this.lst_ViewCook.Location = new System.Drawing.Point(498, 181);
+            this.lst_ViewCook.Name = "lst_ViewCook";
+            this.lst_ViewCook.Size = new System.Drawing.Size(89, 30);
+            this.lst_ViewCook.TabIndex = 26;
+            this.lst_ViewCook.UseCompatibleStateImageBehavior = false;
+            // 
+            // lst_ViewPrep
+            // 
+            this.lst_ViewPrep.BackColor = System.Drawing.Color.PeachPuff;
+            this.lst_ViewPrep.Enabled = false;
+            this.lst_ViewPrep.ForeColor = System.Drawing.Color.Olive;
+            this.lst_ViewPrep.Location = new System.Drawing.Point(498, 148);
+            this.lst_ViewPrep.Name = "lst_ViewPrep";
+            this.lst_ViewPrep.Size = new System.Drawing.Size(89, 30);
+            this.lst_ViewPrep.TabIndex = 25;
+            this.lst_ViewPrep.UseCompatibleStateImageBehavior = false;
+            // 
+            // lst_ViewCategory
+            // 
+            this.lst_ViewCategory.BackColor = System.Drawing.Color.PeachPuff;
+            this.lst_ViewCategory.Enabled = false;
+            this.lst_ViewCategory.ForeColor = System.Drawing.Color.Olive;
+            this.lst_ViewCategory.Location = new System.Drawing.Point(401, 39);
+            this.lst_ViewCategory.Name = "lst_ViewCategory";
+            this.lst_ViewCategory.Size = new System.Drawing.Size(186, 30);
+            this.lst_ViewCategory.TabIndex = 1;
+            this.lst_ViewCategory.UseCompatibleStateImageBehavior = false;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.BackColor = System.Drawing.Color.Olive;
+            this.label36.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.PeachPuff;
+            this.label36.Location = new System.Drawing.Point(294, 39);
+            this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label36.MinimumSize = new System.Drawing.Size(0, 30);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(111, 30);
+            this.label36.TabIndex = 23;
+            this.label36.Text = "RECIPE CATEGORY :";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.BackColor = System.Drawing.Color.Olive;
+            this.label35.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(319, 50);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(0, 19);
+            this.label35.TabIndex = 22;
             // 
             // label25
             // 
@@ -1449,152 +918,684 @@
             this.label34.Text = "KITCHEN NEEDS :";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label35
+            // label24
             // 
-            this.label35.AutoSize = true;
-            this.label35.BackColor = System.Drawing.Color.Olive;
-            this.label35.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(319, 50);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(0, 19);
-            this.label35.TabIndex = 22;
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.Olive;
+            this.label24.Font = new System.Drawing.Font("KG Covered By Your Grace", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(20, 6);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(207, 48);
+            this.label24.TabIndex = 2;
+            this.label24.Text = "VIEW RECIPE";
             // 
-            // label36
+            // tab_Edit
             // 
-            this.label36.AutoSize = true;
-            this.label36.BackColor = System.Drawing.Color.Olive;
-            this.label36.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.PeachPuff;
-            this.label36.Location = new System.Drawing.Point(294, 39);
-            this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label36.MinimumSize = new System.Drawing.Size(0, 30);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(111, 30);
-            this.label36.TabIndex = 23;
-            this.label36.Text = "RECIPE CATEGORY :";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tab_Edit.BackColor = System.Drawing.Color.LemonChiffon;
+            this.tab_Edit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tab_Edit.BackgroundImage")));
+            this.tab_Edit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tab_Edit.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tab_Edit.Controls.Add(this.btn_SaveEdits);
+            this.tab_Edit.Controls.Add(this.label13);
+            this.tab_Edit.Controls.Add(this.grb_EditCategoryChBxs);
+            this.tab_Edit.Controls.Add(this.label12);
+            this.tab_Edit.Controls.Add(this.txt_EditCook);
+            this.tab_Edit.Controls.Add(this.cbo_RecipeNameList);
+            this.tab_Edit.Controls.Add(this.txt_EditTips);
+            this.tab_Edit.Controls.Add(this.txt_EditDirections);
+            this.tab_Edit.Controls.Add(this.label14);
+            this.tab_Edit.Controls.Add(this.label23);
+            this.tab_Edit.Controls.Add(this.label22);
+            this.tab_Edit.Controls.Add(this.label15);
+            this.tab_Edit.Controls.Add(this.label21);
+            this.tab_Edit.Controls.Add(this.txt_EditKitchen);
+            this.tab_Edit.Controls.Add(this.label20);
+            this.tab_Edit.Controls.Add(this.label16);
+            this.tab_Edit.Controls.Add(this.label19);
+            this.tab_Edit.Controls.Add(this.txt_EditIngred);
+            this.tab_Edit.Controls.Add(this.label18);
+            this.tab_Edit.Controls.Add(this.label17);
+            this.tab_Edit.Controls.Add(this.txt_EditDescrip);
+            this.tab_Edit.Controls.Add(this.txt_EditServeAmt);
+            this.tab_Edit.Controls.Add(this.txt_EditName);
+            this.tab_Edit.Controls.Add(this.txt_EditTemp);
+            this.tab_Edit.Controls.Add(this.txt_EditPrep);
+            this.tab_Edit.ForeColor = System.Drawing.Color.PeachPuff;
+            this.tab_Edit.Location = new System.Drawing.Point(4, 34);
+            this.tab_Edit.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tab_Edit.Name = "tab_Edit";
+            this.tab_Edit.Size = new System.Drawing.Size(622, 799);
+            this.tab_Edit.TabIndex = 2;
+            this.tab_Edit.Text = "EDIT RECIPE";
+            this.tab_Edit.ToolTipText = "Edit recipe";
             // 
-            // lst_ViewCategory
+            // btn_SaveEdits
             // 
-            this.lst_ViewCategory.BackColor = System.Drawing.Color.PeachPuff;
-            this.lst_ViewCategory.Enabled = false;
-            this.lst_ViewCategory.ForeColor = System.Drawing.Color.Olive;
-            this.lst_ViewCategory.Location = new System.Drawing.Point(401, 39);
-            this.lst_ViewCategory.Name = "lst_ViewCategory";
-            this.lst_ViewCategory.Size = new System.Drawing.Size(186, 30);
-            this.lst_ViewCategory.TabIndex = 1;
-            this.lst_ViewCategory.UseCompatibleStateImageBehavior = false;
+            this.btn_SaveEdits.BackColor = System.Drawing.Color.Olive;
+            this.btn_SaveEdits.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_SaveEdits.Font = new System.Drawing.Font("Covered By Your Grace", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SaveEdits.Location = new System.Drawing.Point(235, 633);
+            this.btn_SaveEdits.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn_SaveEdits.Name = "btn_SaveEdits";
+            this.btn_SaveEdits.Size = new System.Drawing.Size(183, 46);
+            this.btn_SaveEdits.TabIndex = 13;
+            this.btn_SaveEdits.Text = "SAVE EDITS";
+            this.btn_SaveEdits.UseVisualStyleBackColor = false;
             // 
-            // lst_ViewTemp
+            // label13
             // 
-            this.lst_ViewTemp.BackColor = System.Drawing.Color.PeachPuff;
-            this.lst_ViewTemp.Enabled = false;
-            this.lst_ViewTemp.ForeColor = System.Drawing.Color.Olive;
-            this.lst_ViewTemp.Location = new System.Drawing.Point(498, 81);
-            this.lst_ViewTemp.Name = "lst_ViewTemp";
-            this.lst_ViewTemp.Size = new System.Drawing.Size(89, 30);
-            this.lst_ViewTemp.TabIndex = 24;
-            this.lst_ViewTemp.UseCompatibleStateImageBehavior = false;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("KG Covered By Your Grace", 38F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Olive;
+            this.label13.Location = new System.Drawing.Point(29, 35);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(239, 57);
+            this.label13.TabIndex = 19;
+            this.label13.Text = "EDIT RECIPE";
             // 
-            // lst_ViewPrep
+            // grb_EditCategoryChBxs
             // 
-            this.lst_ViewPrep.BackColor = System.Drawing.Color.PeachPuff;
-            this.lst_ViewPrep.Enabled = false;
-            this.lst_ViewPrep.ForeColor = System.Drawing.Color.Olive;
-            this.lst_ViewPrep.Location = new System.Drawing.Point(498, 148);
-            this.lst_ViewPrep.Name = "lst_ViewPrep";
-            this.lst_ViewPrep.Size = new System.Drawing.Size(89, 30);
-            this.lst_ViewPrep.TabIndex = 25;
-            this.lst_ViewPrep.UseCompatibleStateImageBehavior = false;
+            this.grb_EditCategoryChBxs.BackColor = System.Drawing.Color.PeachPuff;
+            this.grb_EditCategoryChBxs.Controls.Add(this.checkedListBox2);
+            this.grb_EditCategoryChBxs.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.grb_EditCategoryChBxs.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grb_EditCategoryChBxs.ForeColor = System.Drawing.Color.Olive;
+            this.grb_EditCategoryChBxs.Location = new System.Drawing.Point(319, 241);
+            this.grb_EditCategoryChBxs.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grb_EditCategoryChBxs.Name = "grb_EditCategoryChBxs";
+            this.grb_EditCategoryChBxs.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grb_EditCategoryChBxs.Size = new System.Drawing.Size(256, 128);
+            this.grb_EditCategoryChBxs.TabIndex = 19;
+            this.grb_EditCategoryChBxs.TabStop = false;
+            this.grb_EditCategoryChBxs.Text = "Check all categories that apply :";
             // 
-            // lst_ViewCook
+            // checkedListBox2
             // 
-            this.lst_ViewCook.BackColor = System.Drawing.Color.PeachPuff;
-            this.lst_ViewCook.Enabled = false;
-            this.lst_ViewCook.ForeColor = System.Drawing.Color.Olive;
-            this.lst_ViewCook.Location = new System.Drawing.Point(498, 181);
-            this.lst_ViewCook.Name = "lst_ViewCook";
-            this.lst_ViewCook.Size = new System.Drawing.Size(89, 30);
-            this.lst_ViewCook.TabIndex = 26;
-            this.lst_ViewCook.UseCompatibleStateImageBehavior = false;
+            this.checkedListBox2.BackColor = System.Drawing.Color.PeachPuff;
+            this.checkedListBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBox2.ColumnWidth = 150;
+            this.checkedListBox2.Font = new System.Drawing.Font("Covered By Your Grace", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox2.ForeColor = System.Drawing.Color.Olive;
+            this.checkedListBox2.FormattingEnabled = true;
+            this.checkedListBox2.Items.AddRange(new object[] {
+            "Asian",
+            "Side Dish",
+            "No Bake",
+            "Baked",
+            "Seafood",
+            "Entree",
+            "Meat",
+            "Sandwich",
+            "BBQ",
+            "Pasta"});
+            this.checkedListBox2.Location = new System.Drawing.Point(23, 24);
+            this.checkedListBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.checkedListBox2.MultiColumn = true;
+            this.checkedListBox2.Name = "checkedListBox2";
+            this.checkedListBox2.Size = new System.Drawing.Size(307, 85);
+            this.checkedListBox2.TabIndex = 8;
+            this.checkedListBox2.ThreeDCheckBoxes = true;
             // 
-            // lst_ViewServeAmt
+            // label12
             // 
-            this.lst_ViewServeAmt.BackColor = System.Drawing.Color.PeachPuff;
-            this.lst_ViewServeAmt.Enabled = false;
-            this.lst_ViewServeAmt.ForeColor = System.Drawing.Color.Olive;
-            this.lst_ViewServeAmt.Location = new System.Drawing.Point(498, 114);
-            this.lst_ViewServeAmt.Name = "lst_ViewServeAmt";
-            this.lst_ViewServeAmt.Size = new System.Drawing.Size(89, 30);
-            this.lst_ViewServeAmt.TabIndex = 27;
-            this.lst_ViewServeAmt.UseCompatibleStateImageBehavior = false;
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.PeachPuff;
+            this.label12.Font = new System.Drawing.Font("KG Covered By Your Grace", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Olive;
+            this.label12.Location = new System.Drawing.Point(317, 30);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(252, 32);
+            this.label12.TabIndex = 18;
+            this.label12.Text = "Select the recipe you want to edit from the droplist.\r\nThe form will populate rec" +
+    "ipe so you can update recipe";
             // 
-            // lst_ViewIngred
+            // txt_EditCook
             // 
-            this.lst_ViewIngred.BackColor = System.Drawing.Color.PeachPuff;
-            this.lst_ViewIngred.Enabled = false;
-            this.lst_ViewIngred.ForeColor = System.Drawing.Color.Olive;
-            this.lst_ViewIngred.Location = new System.Drawing.Point(100, 235);
-            this.lst_ViewIngred.Name = "lst_ViewIngred";
-            this.lst_ViewIngred.Size = new System.Drawing.Size(209, 163);
-            this.lst_ViewIngred.TabIndex = 28;
-            this.lst_ViewIngred.UseCompatibleStateImageBehavior = false;
+            this.txt_EditCook.BackColor = System.Drawing.Color.PeachPuff;
+            this.txt_EditCook.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_EditCook.ForeColor = System.Drawing.Color.Olive;
+            this.txt_EditCook.Location = new System.Drawing.Point(195, 362);
+            this.txt_EditCook.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_EditCook.Name = "txt_EditCook";
+            this.txt_EditCook.Size = new System.Drawing.Size(95, 25);
+            this.txt_EditCook.TabIndex = 7;
+            this.txt_EditCook.Text = "  Mins";
             // 
-            // lst_ViewKitchen
+            // cbo_RecipeNameList
             // 
-            this.lst_ViewKitchen.BackColor = System.Drawing.Color.PeachPuff;
-            this.lst_ViewKitchen.Enabled = false;
-            this.lst_ViewKitchen.ForeColor = System.Drawing.Color.Olive;
-            this.lst_ViewKitchen.Location = new System.Drawing.Point(401, 235);
-            this.lst_ViewKitchen.Name = "lst_ViewKitchen";
-            this.lst_ViewKitchen.Size = new System.Drawing.Size(186, 163);
-            this.lst_ViewKitchen.Sorting = System.Windows.Forms.SortOrder.Ascending;
-            this.lst_ViewKitchen.TabIndex = 29;
-            this.lst_ViewKitchen.UseCompatibleStateImageBehavior = false;
+            this.cbo_RecipeNameList.BackColor = System.Drawing.Color.PeachPuff;
+            this.cbo_RecipeNameList.ForeColor = System.Drawing.Color.Olive;
+            this.cbo_RecipeNameList.FormattingEnabled = true;
+            this.cbo_RecipeNameList.Location = new System.Drawing.Point(289, 65);
+            this.cbo_RecipeNameList.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.cbo_RecipeNameList.Name = "cbo_RecipeNameList";
+            this.cbo_RecipeNameList.Size = new System.Drawing.Size(289, 27);
+            this.cbo_RecipeNameList.TabIndex = 1;
+            this.cbo_RecipeNameList.Text = "Choose an EXISTING Recipe";
             // 
-            // lst_ViewName
+            // txt_EditTips
             // 
-            this.lst_ViewName.BackColor = System.Drawing.Color.PeachPuff;
-            this.lst_ViewName.Enabled = false;
-            this.lst_ViewName.ForeColor = System.Drawing.Color.Olive;
-            this.lst_ViewName.Location = new System.Drawing.Point(99, 81);
-            this.lst_ViewName.Name = "lst_ViewName";
-            this.lst_ViewName.Size = new System.Drawing.Size(292, 30);
-            this.lst_ViewName.TabIndex = 30;
-            this.lst_ViewName.UseCompatibleStateImageBehavior = false;
+            this.txt_EditTips.BackColor = System.Drawing.Color.PeachPuff;
+            this.txt_EditTips.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_EditTips.ForeColor = System.Drawing.Color.Olive;
+            this.txt_EditTips.Location = new System.Drawing.Point(195, 555);
+            this.txt_EditTips.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_EditTips.Multiline = true;
+            this.txt_EditTips.Name = "txt_EditTips";
+            this.txt_EditTips.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txt_EditTips.Size = new System.Drawing.Size(383, 29);
+            this.txt_EditTips.TabIndex = 12;
+            this.txt_EditTips.Text = "  *";
             // 
-            // lst_ViewDescrip
+            // txt_EditDirections
             // 
-            this.lst_ViewDescrip.BackColor = System.Drawing.Color.PeachPuff;
-            this.lst_ViewDescrip.Enabled = false;
-            this.lst_ViewDescrip.ForeColor = System.Drawing.Color.Olive;
-            this.lst_ViewDescrip.Location = new System.Drawing.Point(100, 121);
-            this.lst_ViewDescrip.Name = "lst_ViewDescrip";
-            this.lst_ViewDescrip.Size = new System.Drawing.Size(305, 90);
-            this.lst_ViewDescrip.TabIndex = 31;
-            this.lst_ViewDescrip.UseCompatibleStateImageBehavior = false;
+            this.txt_EditDirections.BackColor = System.Drawing.Color.PeachPuff;
+            this.txt_EditDirections.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_EditDirections.ForeColor = System.Drawing.Color.Olive;
+            this.txt_EditDirections.Location = new System.Drawing.Point(195, 509);
+            this.txt_EditDirections.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_EditDirections.Multiline = true;
+            this.txt_EditDirections.Name = "txt_EditDirections";
+            this.txt_EditDirections.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txt_EditDirections.Size = new System.Drawing.Size(383, 29);
+            this.txt_EditDirections.TabIndex = 11;
+            this.txt_EditDirections.Text = "  *";
             // 
-            // lst_ViewDirections
+            // label14
             // 
-            this.lst_ViewDirections.BackColor = System.Drawing.Color.PeachPuff;
-            this.lst_ViewDirections.Enabled = false;
-            this.lst_ViewDirections.ForeColor = System.Drawing.Color.Olive;
-            this.lst_ViewDirections.Location = new System.Drawing.Point(100, 415);
-            this.lst_ViewDirections.Name = "lst_ViewDirections";
-            this.lst_ViewDirections.Size = new System.Drawing.Size(487, 200);
-            this.lst_ViewDirections.TabIndex = 32;
-            this.lst_ViewDirections.UseCompatibleStateImageBehavior = false;
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Olive;
+            this.label14.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.PeachPuff;
+            this.label14.Location = new System.Drawing.Point(85, 229);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.MinimumSize = new System.Drawing.Size(0, 30);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(70, 30);
+            this.label14.TabIndex = 27;
+            this.label14.Text = "SERVINGS :";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lst_ViewTips
+            // label23
             // 
-            this.lst_ViewTips.BackColor = System.Drawing.Color.PeachPuff;
-            this.lst_ViewTips.Enabled = false;
-            this.lst_ViewTips.ForeColor = System.Drawing.Color.Olive;
-            this.lst_ViewTips.Location = new System.Drawing.Point(100, 627);
-            this.lst_ViewTips.Name = "lst_ViewTips";
-            this.lst_ViewTips.Size = new System.Drawing.Size(487, 112);
-            this.lst_ViewTips.TabIndex = 33;
-            this.lst_ViewTips.UseCompatibleStateImageBehavior = false;
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Olive;
+            this.label23.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.PeachPuff;
+            this.label23.Location = new System.Drawing.Point(63, 410);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.MinimumSize = new System.Drawing.Size(0, 30);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(96, 30);
+            this.label23.TabIndex = 25;
+            this.label23.Text = "KITCHEN NEEDS :";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Olive;
+            this.label22.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.PeachPuff;
+            this.label22.Location = new System.Drawing.Point(73, 458);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.MinimumSize = new System.Drawing.Size(0, 30);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(84, 30);
+            this.label22.TabIndex = 35;
+            this.label22.Text = "INGREDIENTS :";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Olive;
+            this.label15.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.PeachPuff;
+            this.label15.Location = new System.Drawing.Point(75, 318);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.MinimumSize = new System.Drawing.Size(0, 30);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(78, 30);
+            this.label15.TabIndex = 30;
+            this.label15.Text = "PREP TIME  :";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Olive;
+            this.label21.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.PeachPuff;
+            this.label21.Location = new System.Drawing.Point(74, 185);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.MinimumSize = new System.Drawing.Size(0, 30);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(83, 30);
+            this.label21.TabIndex = 23;
+            this.label21.Text = "DESCRIPTION :";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txt_EditKitchen
+            // 
+            this.txt_EditKitchen.BackColor = System.Drawing.Color.PeachPuff;
+            this.txt_EditKitchen.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_EditKitchen.ForeColor = System.Drawing.Color.Olive;
+            this.txt_EditKitchen.Location = new System.Drawing.Point(195, 411);
+            this.txt_EditKitchen.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_EditKitchen.Multiline = true;
+            this.txt_EditKitchen.Name = "txt_EditKitchen";
+            this.txt_EditKitchen.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txt_EditKitchen.Size = new System.Drawing.Size(383, 28);
+            this.txt_EditKitchen.TabIndex = 9;
+            this.txt_EditKitchen.Text = "  *";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Olive;
+            this.label20.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.PeachPuff;
+            this.label20.Location = new System.Drawing.Point(81, 508);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.MinimumSize = new System.Drawing.Size(0, 30);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(75, 30);
+            this.label20.TabIndex = 37;
+            this.label20.Text = "DIRECTIONS :";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Olive;
+            this.label16.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.PeachPuff;
+            this.label16.Location = new System.Drawing.Point(83, 361);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.MinimumSize = new System.Drawing.Size(0, 30);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(70, 30);
+            this.label16.TabIndex = 31;
+            this.label16.Text = "COOK TIME :";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Olive;
+            this.label19.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.PeachPuff;
+            this.label19.Location = new System.Drawing.Point(70, 142);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.MinimumSize = new System.Drawing.Size(0, 30);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(85, 30);
+            this.label19.TabIndex = 20;
+            this.label19.Text = "RECIPE TITLE :";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txt_EditIngred
+            // 
+            this.txt_EditIngred.BackColor = System.Drawing.Color.PeachPuff;
+            this.txt_EditIngred.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_EditIngred.ForeColor = System.Drawing.Color.Olive;
+            this.txt_EditIngred.Location = new System.Drawing.Point(195, 458);
+            this.txt_EditIngred.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_EditIngred.MaximumSize = new System.Drawing.Size(4, 400);
+            this.txt_EditIngred.MinimumSize = new System.Drawing.Size(380, 29);
+            this.txt_EditIngred.Multiline = true;
+            this.txt_EditIngred.Name = "txt_EditIngred";
+            this.txt_EditIngred.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txt_EditIngred.Size = new System.Drawing.Size(380, 29);
+            this.txt_EditIngred.TabIndex = 10;
+            this.txt_EditIngred.Text = "  *";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Olive;
+            this.label18.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.PeachPuff;
+            this.label18.Location = new System.Drawing.Point(69, 555);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.MinimumSize = new System.Drawing.Size(0, 30);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(88, 30);
+            this.label18.TabIndex = 38;
+            this.label18.Text = "TIPS / NOTES :";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Olive;
+            this.label17.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.PeachPuff;
+            this.label17.Location = new System.Drawing.Point(58, 276);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.MinimumSize = new System.Drawing.Size(0, 30);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(101, 30);
+            this.label17.TabIndex = 32;
+            this.label17.Text = "TEMPERATURE  :";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txt_EditDescrip
+            // 
+            this.txt_EditDescrip.BackColor = System.Drawing.Color.PeachPuff;
+            this.txt_EditDescrip.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_EditDescrip.ForeColor = System.Drawing.Color.Olive;
+            this.txt_EditDescrip.Location = new System.Drawing.Point(195, 185);
+            this.txt_EditDescrip.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_EditDescrip.Multiline = true;
+            this.txt_EditDescrip.Name = "txt_EditDescrip";
+            this.txt_EditDescrip.Size = new System.Drawing.Size(383, 29);
+            this.txt_EditDescrip.TabIndex = 3;
+            this.txt_EditDescrip.Text = "  Brief note about recipe";
+            // 
+            // txt_EditServeAmt
+            // 
+            this.txt_EditServeAmt.BackColor = System.Drawing.Color.PeachPuff;
+            this.txt_EditServeAmt.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_EditServeAmt.ForeColor = System.Drawing.Color.Olive;
+            this.txt_EditServeAmt.Location = new System.Drawing.Point(197, 230);
+            this.txt_EditServeAmt.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_EditServeAmt.Name = "txt_EditServeAmt";
+            this.txt_EditServeAmt.Size = new System.Drawing.Size(93, 25);
+            this.txt_EditServeAmt.TabIndex = 4;
+            this.txt_EditServeAmt.Text = "  #";
+            // 
+            // txt_EditName
+            // 
+            this.txt_EditName.BackColor = System.Drawing.Color.PeachPuff;
+            this.txt_EditName.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_EditName.ForeColor = System.Drawing.Color.Olive;
+            this.txt_EditName.Location = new System.Drawing.Point(195, 142);
+            this.txt_EditName.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_EditName.MinimumSize = new System.Drawing.Size(4, 28);
+            this.txt_EditName.Name = "txt_EditName";
+            this.txt_EditName.Size = new System.Drawing.Size(383, 25);
+            this.txt_EditName.TabIndex = 2;
+            this.txt_EditName.Text = "  Name of recipe";
+            // 
+            // txt_EditTemp
+            // 
+            this.txt_EditTemp.BackColor = System.Drawing.Color.PeachPuff;
+            this.txt_EditTemp.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_EditTemp.ForeColor = System.Drawing.Color.Olive;
+            this.txt_EditTemp.Location = new System.Drawing.Point(196, 277);
+            this.txt_EditTemp.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_EditTemp.Name = "txt_EditTemp";
+            this.txt_EditTemp.Size = new System.Drawing.Size(94, 25);
+            this.txt_EditTemp.TabIndex = 5;
+            this.txt_EditTemp.Text = "  F";
+            // 
+            // txt_EditPrep
+            // 
+            this.txt_EditPrep.BackColor = System.Drawing.Color.PeachPuff;
+            this.txt_EditPrep.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_EditPrep.ForeColor = System.Drawing.Color.Olive;
+            this.txt_EditPrep.Location = new System.Drawing.Point(195, 319);
+            this.txt_EditPrep.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_EditPrep.Name = "txt_EditPrep";
+            this.txt_EditPrep.Size = new System.Drawing.Size(95, 25);
+            this.txt_EditPrep.TabIndex = 6;
+            this.txt_EditPrep.Text = "  Mins";
+            // 
+            // tab_Delete
+            // 
+            this.tab_Delete.BackColor = System.Drawing.Color.DarkKhaki;
+            this.tab_Delete.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tab_Delete.Controls.Add(this.btn_Delete);
+            this.tab_Delete.Controls.Add(this.cmb_DeleteList);
+            this.tab_Delete.ForeColor = System.Drawing.Color.PeachPuff;
+            this.tab_Delete.Location = new System.Drawing.Point(4, 34);
+            this.tab_Delete.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tab_Delete.Name = "tab_Delete";
+            this.tab_Delete.Size = new System.Drawing.Size(622, 799);
+            this.tab_Delete.TabIndex = 3;
+            this.tab_Delete.Text = "DELETE RECIPE";
+            this.tab_Delete.ToolTipText = "Delete recipe permanently";
+            // 
+            // btn_Delete
+            // 
+            this.btn_Delete.BackColor = System.Drawing.Color.Olive;
+            this.btn_Delete.Location = new System.Drawing.Point(149, 125);
+            this.btn_Delete.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Size = new System.Drawing.Size(129, 49);
+            this.btn_Delete.TabIndex = 20;
+            this.btn_Delete.Text = "DELETE RECIPE";
+            this.btn_Delete.UseVisualStyleBackColor = false;
+            // 
+            // cmb_DeleteList
+            // 
+            this.cmb_DeleteList.BackColor = System.Drawing.Color.PeachPuff;
+            this.cmb_DeleteList.ForeColor = System.Drawing.Color.Olive;
+            this.cmb_DeleteList.FormattingEnabled = true;
+            this.cmb_DeleteList.Location = new System.Drawing.Point(73, 55);
+            this.cmb_DeleteList.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.cmb_DeleteList.Name = "cmb_DeleteList";
+            this.cmb_DeleteList.Size = new System.Drawing.Size(289, 27);
+            this.cmb_DeleteList.TabIndex = 19;
+            this.cmb_DeleteList.Text = "Choose an EXISTING Recipe";
+            // 
+            // comboBoc
+            // 
+            this.comboBoc.BackColor = System.Drawing.Color.PeachPuff;
+            this.comboBoc.ForeColor = System.Drawing.Color.Olive;
+            this.comboBoc.FormattingEnabled = true;
+            this.comboBoc.Location = new System.Drawing.Point(109, 52);
+            this.comboBoc.Name = "comboBoc";
+            this.comboBoc.Size = new System.Drawing.Size(431, 21);
+            this.comboBoc.TabIndex = 33;
+            this.comboBoc.Text = "Choose an EXISTING Recipe";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewRecipesToolStripMenuItem,
+            this.createRecipeToolStripMenuItem,
+            this.saveRecipeToolStripMenuItem,
+            this.editRecipeToolStripMenuItem,
+            this.deleteRecipeToolStripMenuItem,
+            this.exitRecipeApplicationToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(143, 136);
+            // 
+            // viewRecipesToolStripMenuItem
+            // 
+            this.viewRecipesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripComboBox1});
+            this.viewRecipesToolStripMenuItem.Name = "viewRecipesToolStripMenuItem";
+            this.viewRecipesToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.viewRecipesToolStripMenuItem.Text = "View Recipes";
+            // 
+            // toolStripComboBox1
+            // 
+            this.toolStripComboBox1.Name = "toolStripComboBox1";
+            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 23);
+            // 
+            // createRecipeToolStripMenuItem
+            // 
+            this.createRecipeToolStripMenuItem.Name = "createRecipeToolStripMenuItem";
+            this.createRecipeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            // 
+            // saveRecipeToolStripMenuItem
+            // 
+            this.saveRecipeToolStripMenuItem.Name = "saveRecipeToolStripMenuItem";
+            this.saveRecipeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            // 
+            // editRecipeToolStripMenuItem
+            // 
+            this.editRecipeToolStripMenuItem.Name = "editRecipeToolStripMenuItem";
+            this.editRecipeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            // 
+            // deleteRecipeToolStripMenuItem
+            // 
+            this.deleteRecipeToolStripMenuItem.Name = "deleteRecipeToolStripMenuItem";
+            this.deleteRecipeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            // 
+            // exitRecipeApplicationToolStripMenuItem
+            // 
+            this.exitRecipeApplicationToolStripMenuItem.Name = "exitRecipeApplicationToolStripMenuItem";
+            this.exitRecipeApplicationToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            // 
+            // newRecipeToolStripMenuItem
+            // 
+            this.newRecipeToolStripMenuItem.Name = "newRecipeToolStripMenuItem";
+            this.newRecipeToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnu_Options,
+            this.mnu_NavTabs});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(880, 32);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // mnu_Options
+            // 
+            this.mnu_Options.BackColor = System.Drawing.Color.PeachPuff;
+            this.mnu_Options.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.mnu_Options.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnu_Quit});
+            this.mnu_Options.Font = new System.Drawing.Font("KG Covered By Your Grace", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnu_Options.ForeColor = System.Drawing.Color.Olive;
+            this.mnu_Options.Name = "mnu_Options";
+            this.mnu_Options.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)));
+            this.mnu_Options.Size = new System.Drawing.Size(92, 28);
+            this.mnu_Options.Text = "&FILE MENU";
+            this.mnu_Options.ToolTipText = "Application Options";
+            // 
+            // mnu_Quit
+            // 
+            this.mnu_Quit.BackColor = System.Drawing.Color.Olive;
+            this.mnu_Quit.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnu_Quit.ForeColor = System.Drawing.Color.PeachPuff;
+            this.mnu_Quit.Name = "mnu_Quit";
+            this.mnu_Quit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
+            this.mnu_Quit.Size = new System.Drawing.Size(146, 24);
+            this.mnu_Quit.Text = "&QUIT ";
+            this.mnu_Quit.Click += new System.EventHandler(this.mnu_Quit_Click);
+            // 
+            // mnu_NavTabs
+            // 
+            this.mnu_NavTabs.BackColor = System.Drawing.Color.Olive;
+            this.mnu_NavTabs.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnu_NewMenuItem,
+            this.mnu_ViewMenuItem,
+            this.mnu_EditMenuItem,
+            this.mnu_DeleteMenuItem});
+            this.mnu_NavTabs.Font = new System.Drawing.Font("Covered By Your Grace", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnu_NavTabs.ForeColor = System.Drawing.Color.PeachPuff;
+            this.mnu_NavTabs.Name = "mnu_NavTabs";
+            this.mnu_NavTabs.ShowShortcutKeys = false;
+            this.mnu_NavTabs.Size = new System.Drawing.Size(94, 28);
+            this.mnu_NavTabs.Text = "NAVIGATION";
+            this.mnu_NavTabs.Click += new System.EventHandler(this.frmNewRecipe_Load);
+            this.mnu_NavTabs.DisplayStyleChanged += new System.EventHandler(this.frmNewRecipe_Load);
+            // 
+            // mnu_NewMenuItem
+            // 
+            this.mnu_NewMenuItem.BackColor = System.Drawing.Color.Olive;
+            this.mnu_NewMenuItem.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnu_NewMenuItem.ForeColor = System.Drawing.Color.PeachPuff;
+            this.mnu_NewMenuItem.Name = "mnu_NewMenuItem";
+            this.mnu_NewMenuItem.Size = new System.Drawing.Size(155, 24);
+            this.mnu_NewMenuItem.Text = "NEW Recipe";
+            this.mnu_NewMenuItem.Click += new System.EventHandler(this.mnu_NewMenuItem_Click);
+            // 
+            // mnu_ViewMenuItem
+            // 
+            this.mnu_ViewMenuItem.BackColor = System.Drawing.Color.Olive;
+            this.mnu_ViewMenuItem.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnu_ViewMenuItem.ForeColor = System.Drawing.Color.PeachPuff;
+            this.mnu_ViewMenuItem.Name = "mnu_ViewMenuItem";
+            this.mnu_ViewMenuItem.Size = new System.Drawing.Size(155, 24);
+            this.mnu_ViewMenuItem.Text = "VIEW Recipe";
+            this.mnu_ViewMenuItem.Click += new System.EventHandler(this.mnu_ViewMenuItem_Click);
+            // 
+            // mnu_EditMenuItem
+            // 
+            this.mnu_EditMenuItem.BackColor = System.Drawing.Color.Olive;
+            this.mnu_EditMenuItem.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnu_EditMenuItem.ForeColor = System.Drawing.Color.PeachPuff;
+            this.mnu_EditMenuItem.Name = "mnu_EditMenuItem";
+            this.mnu_EditMenuItem.Size = new System.Drawing.Size(155, 24);
+            this.mnu_EditMenuItem.Text = "EDIT Recipe";
+            this.mnu_EditMenuItem.Click += new System.EventHandler(this.mnu_EditMenuItem_Click);
+            // 
+            // mnu_DeleteMenuItem
+            // 
+            this.mnu_DeleteMenuItem.BackColor = System.Drawing.Color.Olive;
+            this.mnu_DeleteMenuItem.Font = new System.Drawing.Font("Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnu_DeleteMenuItem.ForeColor = System.Drawing.Color.PeachPuff;
+            this.mnu_DeleteMenuItem.Name = "mnu_DeleteMenuItem";
+            this.mnu_DeleteMenuItem.Size = new System.Drawing.Size(155, 24);
+            this.mnu_DeleteMenuItem.Text = "DELETE Recipe";
+            this.mnu_DeleteMenuItem.Click += new System.EventHandler(this.mnu_DeleteMenuItem_Click);
+            // 
+            // mnu_NewRecipeTab
+            // 
+            this.mnu_NewRecipeTab.BackColor = System.Drawing.Color.PeachPuff;
+            this.mnu_NewRecipeTab.CheckOnClick = true;
+            this.mnu_NewRecipeTab.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.mnu_NewRecipeTab.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnu_NewRecipeTab.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.mnu_NewRecipeTab.Name = "mnu_NewRecipeTab";
+            this.mnu_NewRecipeTab.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.mnu_NewRecipeTab.Size = new System.Drawing.Size(225, 24);
+            this.mnu_NewRecipeTab.Text = "&CREATE New Recipe";
+            this.mnu_NewRecipeTab.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.mnu_NewRecipeTab.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
+            this.mnu_NewRecipeTab.ToolTipText = "New Recipe";
+            // 
+            // mnu_ViewRecipeTab
+            // 
+            this.mnu_ViewRecipeTab.BackColor = System.Drawing.Color.PeachPuff;
+            this.mnu_ViewRecipeTab.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.mnu_ViewRecipeTab.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnu_ViewRecipeTab.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.mnu_ViewRecipeTab.Name = "mnu_ViewRecipeTab";
+            this.mnu_ViewRecipeTab.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
+            this.mnu_ViewRecipeTab.Size = new System.Drawing.Size(225, 24);
+            this.mnu_ViewRecipeTab.Text = "&VIEW Existing Recipe";
+            // 
+            // mnu_EditRecipeTab
+            // 
+            this.mnu_EditRecipeTab.BackColor = System.Drawing.Color.PeachPuff;
+            this.mnu_EditRecipeTab.CheckOnClick = true;
+            this.mnu_EditRecipeTab.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.mnu_EditRecipeTab.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnu_EditRecipeTab.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.mnu_EditRecipeTab.Name = "mnu_EditRecipeTab";
+            this.mnu_EditRecipeTab.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
+            this.mnu_EditRecipeTab.Size = new System.Drawing.Size(225, 24);
+            this.mnu_EditRecipeTab.Text = "&EDIT Existing Recipe";
+            this.mnu_EditRecipeTab.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.mnu_EditRecipeTab.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
+            this.mnu_EditRecipeTab.ToolTipText = "Edit an existing recipe ";
+            // 
+            // mnu_DeleteRecipeTab
+            // 
+            this.mnu_DeleteRecipeTab.BackColor = System.Drawing.Color.PeachPuff;
+            this.mnu_DeleteRecipeTab.CheckOnClick = true;
+            this.mnu_DeleteRecipeTab.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.mnu_DeleteRecipeTab.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnu_DeleteRecipeTab.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.mnu_DeleteRecipeTab.Name = "mnu_DeleteRecipeTab";
+            this.mnu_DeleteRecipeTab.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
+            this.mnu_DeleteRecipeTab.Size = new System.Drawing.Size(225, 24);
+            this.mnu_DeleteRecipeTab.Text = "&DELETE Recipe";
+            this.mnu_DeleteRecipeTab.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.mnu_DeleteRecipeTab.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
+            this.mnu_DeleteRecipeTab.ToolTipText = "Permanently delete an existing  recipe";
             // 
             // frmNewRecipe
             // 
@@ -1621,11 +1622,11 @@
             this.tab_View.PerformLayout();
             this.tab_Edit.ResumeLayout(false);
             this.tab_Edit.PerformLayout();
+            this.grb_EditCategoryChBxs.ResumeLayout(false);
             this.tab_Delete.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.grb_EditCategoryChBxs.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
