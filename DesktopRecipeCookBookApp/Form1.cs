@@ -132,37 +132,14 @@ namespace DesktopRecipeCookBookApp
             PopulateDeleteRecipeTab();
         }
 
-
-        //**********************************************************************************************
-        //  Nav Menu item on click event calls the NavigationMenuTabPageSelection(); method on each clicked item
-        //***********************************************************************************************
-     
-
-        //private void mnu_NewRecipeTab_Click(object sender, EventArgs e)
-        //{
-        //    NavigationMenuTabPageSelection();
-        //}
-
-        //private void mnu_ViewRecipeTab_Click(object sender, EventArgs e)
-        //{
-        //    NavigationMenuTabPageSelection();
-        //}
-
-        //private void mnu_EditRecipeTab_Click(object sender, EventArgs e)
-        //{
-        //    NavigationMenuTabPageSelection();
-        //}
-
-        //private void mnu_DeleteRecipeTab_Click(object sender, EventArgs e)
-        //{
-        //    NavigationMenuTabPageSelection();
-        //}
-
-
+        private void PopulateDeleteRecipeTab()
+        {
+            throw new NotImplementedException();
+        }
 
         private void CreateNewRecipeTab(object sender, EventArgs e)
         {
-            
+            PopulateNewRecipe();
         }
 
         private void PopulateNewRecipe()
