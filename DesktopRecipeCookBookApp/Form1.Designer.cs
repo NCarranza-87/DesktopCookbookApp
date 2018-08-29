@@ -474,7 +474,7 @@
             this.cmb_RecipeList.Location = new System.Drawing.Point(298, 6);
             this.cmb_RecipeList.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cmb_RecipeList.Name = "cmb_RecipeList";
-            this.cmb_RecipeList.Size = new System.Drawing.Size(289, 27);
+            this.cmb_RecipeList.Size = new System.Drawing.Size(289, 28);
             this.cmb_RecipeList.TabIndex = 1;
             this.cmb_RecipeList.Text = "Choose an EXISTING Recipe";
             // 
@@ -485,7 +485,7 @@
             this.tbc_RecipeTab.Controls.Add(this.tab_View);
             this.tbc_RecipeTab.Controls.Add(this.tab_Edit);
             this.tbc_RecipeTab.Controls.Add(this.tab_Delete);
-            this.tbc_RecipeTab.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbc_RecipeTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbc_RecipeTab.ItemSize = new System.Drawing.Size(150, 30);
             this.tbc_RecipeTab.Location = new System.Drawing.Point(166, 49);
             this.tbc_RecipeTab.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -525,7 +525,7 @@
             this.tab_New.Controls.Add(this.label3);
             this.tab_New.Controls.Add(this.label9);
             this.tab_New.Controls.Add(this.label4);
-            this.tab_New.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tab_New.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tab_New.ForeColor = System.Drawing.Color.PeachPuff;
             this.tab_New.Location = new System.Drawing.Point(4, 34);
             this.tab_New.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -535,6 +535,7 @@
             this.tab_New.TabIndex = 0;
             this.tab_New.Text = "NEW RECIPE";
             this.tab_New.ToolTipText = "ADD a new recipe";
+            this.tab_New.Click += new System.EventHandler(this.tab_New_Click);
             // 
             // btn_Save
             // 
@@ -762,10 +763,10 @@
             // 
             this.label35.AutoSize = true;
             this.label35.BackColor = System.Drawing.Color.Olive;
-            this.label35.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.Location = new System.Drawing.Point(319, 50);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(0, 19);
+            this.label35.Size = new System.Drawing.Size(0, 20);
             this.label35.TabIndex = 22;
             // 
             // label25
@@ -922,10 +923,10 @@
             // 
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Olive;
-            this.label24.Font = new System.Drawing.Font("KG Covered By Your Grace", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(20, 6);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(207, 48);
+            this.label24.Size = new System.Drawing.Size(316, 51);
             this.label24.TabIndex = 2;
             this.label24.Text = "VIEW RECIPE";
             // 
@@ -985,11 +986,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("KG Covered By Your Grace", 38F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 38F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Olive;
             this.label13.Location = new System.Drawing.Point(29, 35);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(239, 57);
+            this.label13.Size = new System.Drawing.Size(356, 59);
             this.label13.TabIndex = 19;
             this.label13.Text = "EDIT RECIPE";
             // 
@@ -1040,11 +1041,11 @@
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.PeachPuff;
-            this.label12.Font = new System.Drawing.Font("KG Covered By Your Grace", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Olive;
             this.label12.Location = new System.Drawing.Point(317, 30);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(252, 32);
+            this.label12.Size = new System.Drawing.Size(353, 34);
             this.label12.TabIndex = 18;
             this.label12.Text = "Select the recipe you want to edit from the droplist.\r\nThe form will populate rec" +
     "ipe so you can update recipe";
@@ -1069,7 +1070,7 @@
             this.cbo_RecipeNameList.Location = new System.Drawing.Point(289, 65);
             this.cbo_RecipeNameList.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cbo_RecipeNameList.Name = "cbo_RecipeNameList";
-            this.cbo_RecipeNameList.Size = new System.Drawing.Size(289, 27);
+            this.cbo_RecipeNameList.Size = new System.Drawing.Size(289, 28);
             this.cbo_RecipeNameList.TabIndex = 1;
             this.cbo_RecipeNameList.Text = "Choose an EXISTING Recipe";
             // 
@@ -1377,7 +1378,7 @@
             this.cmb_DeleteList.Location = new System.Drawing.Point(73, 55);
             this.cmb_DeleteList.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cmb_DeleteList.Name = "cmb_DeleteList";
-            this.cmb_DeleteList.Size = new System.Drawing.Size(289, 27);
+            this.cmb_DeleteList.Size = new System.Drawing.Size(289, 28);
             this.cmb_DeleteList.TabIndex = 19;
             this.cmb_DeleteList.Text = "Choose an EXISTING Recipe";
             // 
@@ -1455,7 +1456,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(880, 32);
+            this.menuStrip1.Size = new System.Drawing.Size(880, 33);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -1465,22 +1466,22 @@
             this.mnu_Options.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.mnu_Options.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnu_Quit});
-            this.mnu_Options.Font = new System.Drawing.Font("KG Covered By Your Grace", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnu_Options.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnu_Options.ForeColor = System.Drawing.Color.Olive;
             this.mnu_Options.Name = "mnu_Options";
             this.mnu_Options.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)));
-            this.mnu_Options.Size = new System.Drawing.Size(92, 28);
+            this.mnu_Options.Size = new System.Drawing.Size(136, 29);
             this.mnu_Options.Text = "&FILE MENU";
             this.mnu_Options.ToolTipText = "Application Options";
             // 
             // mnu_Quit
             // 
             this.mnu_Quit.BackColor = System.Drawing.Color.Olive;
-            this.mnu_Quit.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnu_Quit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnu_Quit.ForeColor = System.Drawing.Color.PeachPuff;
             this.mnu_Quit.Name = "mnu_Quit";
             this.mnu_Quit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
-            this.mnu_Quit.Size = new System.Drawing.Size(146, 24);
+            this.mnu_Quit.Size = new System.Drawing.Size(177, 24);
             this.mnu_Quit.Text = "&QUIT ";
             this.mnu_Quit.Click += new System.EventHandler(this.mnu_Quit_Click);
             // 
@@ -1496,7 +1497,7 @@
             this.mnu_NavTabs.ForeColor = System.Drawing.Color.PeachPuff;
             this.mnu_NavTabs.Name = "mnu_NavTabs";
             this.mnu_NavTabs.ShowShortcutKeys = false;
-            this.mnu_NavTabs.Size = new System.Drawing.Size(94, 28);
+            this.mnu_NavTabs.Size = new System.Drawing.Size(94, 29);
             this.mnu_NavTabs.Text = "NAVIGATION";
             this.mnu_NavTabs.Click += new System.EventHandler(this.frmNewRecipe_Load);
             this.mnu_NavTabs.DisplayStyleChanged += new System.EventHandler(this.frmNewRecipe_Load);
@@ -1546,7 +1547,7 @@
             this.mnu_NewRecipeTab.BackColor = System.Drawing.Color.PeachPuff;
             this.mnu_NewRecipeTab.CheckOnClick = true;
             this.mnu_NewRecipeTab.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.mnu_NewRecipeTab.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnu_NewRecipeTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnu_NewRecipeTab.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.mnu_NewRecipeTab.Name = "mnu_NewRecipeTab";
             this.mnu_NewRecipeTab.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
@@ -1560,7 +1561,7 @@
             // 
             this.mnu_ViewRecipeTab.BackColor = System.Drawing.Color.PeachPuff;
             this.mnu_ViewRecipeTab.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.mnu_ViewRecipeTab.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnu_ViewRecipeTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnu_ViewRecipeTab.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.mnu_ViewRecipeTab.Name = "mnu_ViewRecipeTab";
             this.mnu_ViewRecipeTab.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
@@ -1572,7 +1573,7 @@
             this.mnu_EditRecipeTab.BackColor = System.Drawing.Color.PeachPuff;
             this.mnu_EditRecipeTab.CheckOnClick = true;
             this.mnu_EditRecipeTab.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.mnu_EditRecipeTab.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnu_EditRecipeTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnu_EditRecipeTab.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.mnu_EditRecipeTab.Name = "mnu_EditRecipeTab";
             this.mnu_EditRecipeTab.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
@@ -1587,7 +1588,7 @@
             this.mnu_DeleteRecipeTab.BackColor = System.Drawing.Color.PeachPuff;
             this.mnu_DeleteRecipeTab.CheckOnClick = true;
             this.mnu_DeleteRecipeTab.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.mnu_DeleteRecipeTab.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnu_DeleteRecipeTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnu_DeleteRecipeTab.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.mnu_DeleteRecipeTab.Name = "mnu_DeleteRecipeTab";
             this.mnu_DeleteRecipeTab.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
@@ -1599,15 +1600,15 @@
             // 
             // frmNewRecipe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.DarkKhaki;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(880, 957);
+            this.ClientSize = new System.Drawing.Size(880, 749);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.tbc_RecipeTab);
-            this.Font = new System.Drawing.Font("KG Covered By Your Grace", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Sienna;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);

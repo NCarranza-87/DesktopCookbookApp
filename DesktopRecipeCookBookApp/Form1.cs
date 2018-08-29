@@ -206,5 +206,10 @@ namespace DesktopRecipeCookBookApp
                 MessageBox.Show("Your recipe was saved successfully!");
             }
         }
+
+        private void tab_New_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
