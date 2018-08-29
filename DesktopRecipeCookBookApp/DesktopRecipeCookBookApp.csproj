@@ -57,7 +57,6 @@
     <Compile Include="category.cs">
       <DependentUpon>RecipeCookbookModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DBHelper.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,8 +122,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\393.jpg" />
     <Content Include="Images\newform.jpg" />
-    <Content Include="Images\viewback.jpg" />
+    <Content Include="Images\view_board.jpg" />
     <Content Include="RecipeCookbookModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>RecipeCookbookModel.edmx</DependentUpon>
