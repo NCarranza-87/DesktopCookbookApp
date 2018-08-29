@@ -126,15 +126,53 @@ namespace DesktopRecipeCookBookApp
             PopulateEditRecipeTab();
         }
 
+        private void PopulateEditRecipeTab()
+        {
+            string recipeName = txt_NewName.Text;
+            string recipeDespt = txt_NewDescrip.Text;
+            string recipeServings = txt_NewServeAmt.Text;
+            string recipeTemp = txt_NewTemp.Text;
+            string recipePrep = txt_NewPrep.Text;
+            string recipeCookTime = txt_NewCook.Text;
+            string reciepNeeds = txt_NewKitchen.Text;
+            string recipeIngreds = txt_NewIngred.Text;
+            string recipeDirections = txt_NewDirections.Text;
+            string recipeTipsNotes = txt_NewTips.Text;
+            checkedListBox1.Enabled = false;
+
+            var addRecipe = new recipe();
+            addRecipe.recipeTitle = recipeName;
+            addRecipe.recipeDescrip = recipeDespt;
+            addRecipe.recipeYield = recipeServings;
+            addRecipe.recipeTemp = recipeTemp;
+            addRecipe.recipePrepTime = recipePrep;
+            addRecipe.recipeCookTime = recipeCookTime;
+            addRecipe.recipeNeed = reciepNeeds;
+            addRecipe.recipeIngred = recipeIngreds;
+            addRecipe.recipeSteps = recipeDirections;
+            addRecipe.recipeTips = recipeTipsNotes;
+
+            RecipeDB.Update(addRecipe);
+        }
+
         private void mnu_DeleteMenuItem_Click(object sender, EventArgs e)
         {
             NavigationMenuTabPageSelection();
          //   PopulateDeleteRecipeTab();
         }
 
-        private void PopulateDeleteRecipeTab()
+        private void PopulateDeleteRecipeTab(int id)
         {
-            throw new NotImplementedException();
+            var context = new RecipeContext();
+
+            //pull recipe from DB to make EF track it
+            recipe recipeToDelete = context.recipe.Find(id);
+
+            //mark recipe as deleted
+            context.recipe.Remove(recipeToDelete);
+
+            //send delete query to DB
+            context.SaveChanges();
         }
 
         private void CreateNewRecipeTab(object sender, EventArgs e)
@@ -193,10 +231,7 @@ namespace DesktopRecipeCookBookApp
 
         
 
-        private void PopulateEditRecipeTab()
-        {
-            
-        }
+        
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
