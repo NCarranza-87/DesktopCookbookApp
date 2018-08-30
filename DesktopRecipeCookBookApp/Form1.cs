@@ -184,7 +184,7 @@ namespace DesktopRecipeCookBookApp
         }
 
 
-        private void mnu_DeleteMenuItem_Click(object sender, EventArgs e)
+        private void Mnu_DeleteMenuItem_Click(object sender, EventArgs e)
         {
             PopulateViewRecipe();
         }
