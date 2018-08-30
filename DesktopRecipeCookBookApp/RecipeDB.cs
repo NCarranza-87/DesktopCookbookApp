@@ -26,6 +26,8 @@ namespace DesktopRecipeCookBookApp
             //assume Recipe is valid
             context.recipe.Add(r);
 
+            context.Entry(r).State = EntityState.Added;
+
             context.SaveChanges();
         }
 

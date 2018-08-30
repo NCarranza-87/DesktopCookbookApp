@@ -111,6 +111,7 @@
             this.txt_EditTemp = new System.Windows.Forms.TextBox();
             this.txt_EditPrep = new System.Windows.Forms.TextBox();
             this.tab_Delete = new System.Windows.Forms.TabPage();
+            this.label37 = new System.Windows.Forms.Label();
             this.btn_Delete = new System.Windows.Forms.Button();
             this.cbo_RecipeDeleteList = new System.Windows.Forms.ComboBox();
             this.comboBoc = new System.Windows.Forms.ComboBox();
@@ -135,7 +136,6 @@
             this.mnu_ViewRecipeTab = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_EditRecipeTab = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_DeleteRecipeTab = new System.Windows.Forms.ToolStripMenuItem();
-            this.label37 = new System.Windows.Forms.Label();
             this.tbc_RecipeTab.SuspendLayout();
             this.tab_New.SuspendLayout();
             this.grb_CategoryChboxes.SuspendLayout();
@@ -1361,6 +1361,18 @@
             this.tab_Delete.Text = "DELETE RECIPE";
             this.tab_Delete.ToolTipText = "Delete recipe permanently";
             // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.BackColor = System.Drawing.Color.Olive;
+            this.label37.Font = new System.Drawing.Font("Covered By Your Grace", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.PeachPuff;
+            this.label37.Location = new System.Drawing.Point(38, 56);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(196, 40);
+            this.label37.TabIndex = 21;
+            this.label37.Text = "DELETE RECIPE";
+            // 
             // btn_Delete
             // 
             this.btn_Delete.BackColor = System.Drawing.Color.Olive;
@@ -1483,7 +1495,7 @@
             this.mnu_Quit.ForeColor = System.Drawing.Color.PeachPuff;
             this.mnu_Quit.Name = "mnu_Quit";
             this.mnu_Quit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
-            this.mnu_Quit.Size = new System.Drawing.Size(180, 24);
+            this.mnu_Quit.Size = new System.Drawing.Size(146, 24);
             this.mnu_Quit.Text = "&QUIT ";
             this.mnu_Quit.Click += new System.EventHandler(this.mnu_Quit_Click);
             // 
@@ -1599,18 +1611,6 @@
             this.mnu_DeleteRecipeTab.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.mnu_DeleteRecipeTab.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
             this.mnu_DeleteRecipeTab.ToolTipText = "Permanently delete an existing  recipe";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.BackColor = System.Drawing.Color.Olive;
-            this.label37.Font = new System.Drawing.Font("Covered By Your Grace", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.PeachPuff;
-            this.label37.Location = new System.Drawing.Point(38, 56);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(196, 40);
-            this.label37.TabIndex = 21;
-            this.label37.Text = "DELETE RECIPE";
             // 
             // frmNewRecipe
             // 
