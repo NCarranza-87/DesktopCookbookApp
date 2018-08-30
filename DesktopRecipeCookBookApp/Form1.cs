@@ -155,6 +155,7 @@ namespace DesktopRecipeCookBookApp
             RecipeDB.Update(addRecipe);
         }
 
+
         private void mnu_DeleteMenuItem_Click(object sender, EventArgs e)
         {
             NavigationMenuTabPageSelection();
